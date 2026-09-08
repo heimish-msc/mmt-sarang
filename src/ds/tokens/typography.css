@@ -1,0 +1,37 @@
+:root{
+  /* display — Archivo at heavy weight, tight leading, negative tracking */
+  --display-xxl:clamp(64px,11.5vw,168px); /* @kind font */
+  --display-xl:clamp(48px,7.5vw,112px); /* @kind font */
+  --display-lg:clamp(36px,4.6vw,72px); /* @kind font */
+  --display-md:clamp(28px,3vw,44px); /* @kind font */
+
+  --title-lg:28px; /* @kind font */
+  --title-md:22px; /* @kind font */
+  --title-sm:17px; /* @kind font */
+
+  --body-lg:16px; /* @kind font */
+  --body-md:13.5px; /* @kind font */
+  --body-sm:11.5px; /* @kind font */
+  --meta:9.5px; /* @kind font */
+  --meta-lg:11px; /* @kind font */
+
+  --wght-display:800; /* @kind font */
+  --wght-display-light:400; /* @kind font */
+  --wght-strong:700; /* @kind font */
+  --wght-body:400; /* @kind font */
+
+  --wdth-wide:112; /* @kind font */
+  --wdth-normal:100; /* @kind font */
+  --wdth-narrow:86; /* @kind font */
+
+  --lh-display:0.86; /* @kind font */
+  --lh-title:1.12; /* @kind font */
+  --lh-body:1.45; /* @kind font */
+  --lh-meta:1.3; /* @kind font */
+
+  --track-display:-0.035em; /* @kind font */
+  --track-title:-0.02em; /* @kind font */
+  --track-body:0em; /* @kind font */
+  --track-meta:0.09em; /* @kind font */
+  --track-meta-wide:0.16em; /* @kind font */
+}

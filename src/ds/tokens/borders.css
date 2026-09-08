@@ -1,0 +1,16 @@
+:root{
+  --hair:1px; /* @kind spacing */
+  --rule-med:2px; /* @kind spacing */
+  --rule-heavy:4px; /* @kind spacing */
+  --border-hair:var(--hair) solid var(--line-hair); /* @kind other */
+  --border-soft:var(--hair) solid var(--line-soft); /* @kind other */
+  --border-invert:var(--hair) solid var(--line-invert); /* @kind other */
+
+  /* the system is square. radius exists only for pills and circular badges */
+  --radius-0:0px;
+  --radius-pill:999px;
+
+  /* no drop shadows on flat editorial surfaces; only the stacked-sheet lift */
+  --shadow-none:none;
+  --shadow-sheet:0 18px 40px -24px rgba(11,11,10,.45);
+}

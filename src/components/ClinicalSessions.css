@@ -1,0 +1,19 @@
+.sessions__intro {
+  margin-top: var(--sp-7);
+  max-width: var(--measure-narrow);
+  font-size: var(--body-md);
+  color: var(--text-muted);
+}
+
+.sessions__grid {
+  margin-top: var(--sp-11);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-8);
+}
+
+@media (max-width: 720px) {
+  .sessions__grid {
+    grid-template-columns: 1fr;
+  }
+}

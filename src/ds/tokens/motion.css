@@ -1,0 +1,7 @@
+:root{
+  --dur-fast:120ms; /* @kind other */
+  --dur-med:220ms; /* @kind other */
+  --dur-slow:420ms; /* @kind other */
+  --ease-standard:cubic-bezier(.2,0,0,1); /* @kind other */
+  --ease-out:cubic-bezier(0,0,.2,1); /* @kind other */
+}
