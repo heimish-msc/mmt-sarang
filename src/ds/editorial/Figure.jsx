@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export function Figure({ src, alt = '', ratio = '3/4', caption, index, frame = false, tone = 'grey', style, ...rest }) {
+export function Figure({ src, alt = '', ratio = '3/4', caption, index, frame = false, tone = 'grey', grayscale = false, style, ...rest }) {
   const [failed, setFailed] = useState(false);
   const showImage = src && !failed;
   const placeholder = {
@@ -13,7 +13,7 @@ export function Figure({ src, alt = '', ratio = '3/4', caption, index, frame = f
       <div style={{
         position: 'relative', aspectRatio: ratio, overflow: 'hidden',
         border: frame ? 'var(--hair) solid var(--line-hair)' : 'none',
-        filter: 'grayscale(1) contrast(1.06)',
+        filter: grayscale ? 'grayscale(1) contrast(1.06)' : 'none',
         ...(showImage ? {} : placeholder),
       }}>
         {showImage ? <img src={src} alt={alt} onError={() => setFailed(true)} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} /> : (

@@ -10,14 +10,15 @@
   align-items: baseline;
   justify-content: space-between;
   gap: var(--sp-9);
-  padding: 14px 0 10px;
+  padding-top: 14px;
+  padding-bottom: 10px;
   border-bottom: var(--hair) solid var(--line-hair);
 }
 
 .header__wordmark {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: 17px;
+  font-size: 24px;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-decoration: none;

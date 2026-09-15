@@ -3,32 +3,28 @@
   padding-bottom: var(--sp-13);
 }
 
-.hero__body {
-  display: grid;
-  grid-template-columns: 1fr 340px;
-  gap: var(--sp-9);
-  align-items: end;
+.hero__identity {
   margin-top: var(--sp-9);
 }
 
-.hero__bio {
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-6);
-  padding-bottom: var(--sp-4);
-  font-size: var(--body-md);
-  line-height: var(--lh-body);
-  max-width: var(--measure-narrow);
+.hero__philosophy {
+  margin-top: var(--sp-12);
+  max-width: 640px;
 }
 
-@media (max-width: 860px) {
-  .hero__body {
-    grid-template-columns: 1fr;
-    align-items: start;
-  }
+.hero__philosophy blockquote {
+  padding-top: var(--sp-9) !important;
+}
 
-  .hero__bio {
-    padding-bottom: 0;
-    margin-top: var(--sp-8);
-  }
+.hero__philosophy blockquote p {
+  font-size: var(--title-md) !important;
+  line-height: 1.35 !important;
+}
+
+.hero__philosophy-line {
+  display: block;
+}
+
+.hero__philosophy-line + .hero__philosophy-line {
+  margin-top: var(--sp-5);
 }

@@ -13,10 +13,6 @@ export default function Footer() {
         <Divider weight="heavy" />
         <div className="footer__row">
           <Caption>{footer.copyright}</Caption>
-          <a className="footer__link" href={`mailto:${footer.email}`}>
-            <Caption as="span">{footer.email}</Caption>
-          </a>
-          <Caption>{footer.phone}</Caption>
           <a className="footer__link" href="#top">
             <Caption tone="ink" as="span">
               &#8593;

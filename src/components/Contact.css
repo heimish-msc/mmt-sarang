@@ -1,0 +1,33 @@
+.contact {
+  border-top: var(--hair) solid var(--line-hair);
+}
+
+.contact__block {
+  margin-top: var(--sp-9);
+  max-width: 480px;
+}
+
+.contact__block dl > div {
+  align-items: center !important;
+}
+
+.contact__instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-4);
+  max-width: 100%;
+  border-bottom: none;
+  transition: color var(--dur-fast) var(--ease-standard);
+}
+
+.contact__instagram svg {
+  flex-shrink: 0;
+}
+
+.contact__instagram span {
+  overflow-wrap: anywhere;
+}
+
+.contact__instagram:hover {
+  color: var(--signal-500);
+}

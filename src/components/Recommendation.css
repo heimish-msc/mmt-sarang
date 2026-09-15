@@ -1,0 +1,65 @@
+.recommendation__letters {
+  margin-top: var(--sp-11);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-11);
+}
+
+.recommendation__letter {
+  max-width: var(--measure);
+}
+
+.recommendation__letter--with-photo {
+  max-width: none;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: var(--sp-10);
+  align-items: stretch;
+}
+
+.recommendation__photo {
+  height: 100%;
+}
+
+.recommendation__photo > div {
+  height: 100% !important;
+  aspect-ratio: auto !important;
+}
+
+.recommendation__text {
+  max-width: var(--measure);
+}
+
+.recommendation__paragraph {
+  margin: 0 0 var(--sp-6);
+  font-size: var(--body-md);
+  line-height: var(--lh-body);
+  color: var(--paper-200);
+}
+
+.recommendation__paragraph:last-of-type {
+  margin-bottom: var(--sp-7);
+}
+
+.recommendation__signature {
+  margin-top: var(--sp-7);
+  border-top: var(--hair) solid var(--line-invert);
+  padding-top: var(--sp-5);
+}
+
+@media (max-width: 720px) {
+  .recommendation__letter--with-photo {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .recommendation__photo {
+    height: auto;
+    max-width: 420px;
+  }
+
+  .recommendation__photo > div {
+    height: auto !important;
+    aspect-ratio: 4 / 5 !important;
+  }
+}

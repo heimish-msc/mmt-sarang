@@ -1,67 +1,125 @@
 export const content = {
   lang: "en",
   nav: {
-    name: "ABC°",
+    name: "Jin Sarang°",
     toggleLabel: "KO",
   },
   hero: {
     meta: [
-      { label: "ABC — Music Therapist" },
+      { label: "Jin Sarang — Music Therapist" },
       { label: "Portfolio 2026" },
       { label: "Seoul, KR", dim: true },
     ],
-    headline: ["ABC"],
-    bio: ["Intro content", "Intro content", "Intro content"],
-  },
-  achievements: {
-    eyebrow: "Achievements",
-    heading: "Achievements",
-    subheading: "Research, talks, credentials, press — the record so far.",
-    items: [
-      { tag: "Thesis", caption: "Caption text", year: "2022" },
-      { tag: "Advisor", caption: "Caption text", year: "2022" },
-      { tag: "Conference", caption: "Caption text", year: "2022" },
-      { tag: "Copyright", caption: "Caption text", year: "2023" },
-      { tag: "Credential", caption: "Caption text", year: "2023" },
-      { tag: "Journal", caption: "Caption text", year: "2023" },
-      { tag: "International", caption: "Caption text", year: "2024" },
-      { tag: "Press", caption: "Caption text", year: "2024" },
-      { tag: "Award", caption: "Caption text", year: "2024" },
-      { tag: "Lecture", caption: "Caption text", year: "2025" },
+    name: "Jin Sarang",
+    role: "Medical Music Therapist & Didgeridoo Player",
+    philosophy: [
+      "Listening is a Form of Self-Care.",
+      "I believe the power to heal is within me.",
+      "I am gifted. So are you.",
     ],
   },
-  sessions: {
-    eyebrow: "Clinical Work",
-    heading: "Clinical Sessions",
-    subheading: "Moments with patients.",
-    items: [
-      { caption: "Caption text" },
-      { caption: "Caption text" },
-      { caption: "Caption text" },
+  thesis: {
+    eyebrow: "",
+    heading: "Thesis",
+    summary: "Summary content",
+  },
+  recommendation: {
+    eyebrow: "",
+    heading: "Recommendation",
+    letters: [
+      {
+        paragraphs: [
+          "It has been a privilege to witness Sarang's remarkable journey as a musician, researcher, and compassionate therapist during her time at the Institute of Salutogenesis and Complementary Medicine, Sri Balaji Vidyapeeth, and through her dedicated work at MGMCRI Hospital. She embodies the true spirit of person-centered care, bringing together scientific inquiry, artistic excellence, and profound human sensitivity in a way that is both inspiring and transformative.",
+          "I have been especially impressed by her pioneering work using the didgeridoo as a therapeutic modality for healing trauma. It never ceases to amaze me how beautifully our interconnected world unfolds—a gifted Korean musician employing an ancient Aboriginal Australian instrument to facilitate healing and hope in the lives of South Indian villagers seeking care. This is a living testament to the universality of compassion, music, and the healing arts.",
+          "Sarang's work transcends cultural and geographical boundaries, reminding us that authentic healing arises from empathy, respect, and genuine human connection. I have every confidence that her continued contributions will enrich the evolving field of music therapy and integrative healthcare. I wish her every success in all her future endeavors. She truly deserves every opportunity that comes her way, and I look forward to seeing her work touch many more lives.",
+        ],
+        photo: "/images/recommendation/01.jpg",
+        name: "Yogacharya Dr. Ananda Balayogi Bhavanani",
+        title: "Professor of Yoga Therapy & Director, Institute of Salutogenesis and Complementary Medicine (ISCM)",
+        affiliation: "Sri Balaji Vidyapeeth, Puducherry, India",
+      },
+      {
+        paragraphs: [
+          "Sarang has been one of my most cherished students — not only for her exceptional skill as a didgeridoo player, but for the remarkable resilience and endurance she has brought to her journey in music therapy. Crossing cultural borders to bring the didgeridoo into clinical and community settings within the Indian subcontinent was no small undertaking, yet she embraced it with openness, discipline, and heart. Watching her navigate unfamiliar terrain — both musically and culturally — and emerge as a confident, capable practitioner has been genuinely rewarding. Sarang has truly come into her own as a shining star in this field, and I have no doubt her work will continue to open new possibilities for how the didgeridoo is understood and used in therapeutic practice.",
+        ],
+        name: "Dr. Bhuvaneswari Chandrasekar PhD",
+        title: "Assistant Professor, School of Music Therapy (SMT)",
+        affiliation: "Institute of Salutogenesis & Complementary Medicine (ISCM), Sri Balaji Vidyapeeth",
+      },
     ],
   },
-  performances: {
-    eyebrow: "Performance Archive",
-    heading: "Performance Archive",
-    subheading: "Years on stage now shape clinical sensitivity.",
-  },
-  testimonials: {
-    eyebrow: "Testimonials",
-    heading: "Words From Others",
-    head: {
-      quote: "Content to be added",
-      name: "Prof. OOO",
-      title: "Department Head, Music Therapy, OO University",
-    },
-    patients: [
-      { quote: "Review to be added", name: "Patient A" },
-      { quote: "Review to be added", name: "Guardian B" },
-      { quote: "Review to be added", name: "Patient C" },
+  advisoryBoard: {
+    eyebrow: "",
+    heading: "Advisory Board",
+    members: [
+      {
+        linesEn: [
+          "Dr. R. Sobana, MD, PgDMT, PhD",
+          "Professor of Physiology",
+          "Deputy Director, Medical Simulation Center, MGMCRI",
+          "Administrative In-Charge, School of Music Therapy, Institute of Salutogenesis and Complementary Medicine (ISCM)",
+          "Sri Balaji Vidyapeeth, India",
+        ],
+        linesKo: [
+          "R. 소바나 박사 (MD, PgDMT, PhD)",
+          "생리학 교수",
+          "MGMCRI 의료 시뮬레이션 센터 부소장",
+          "살루토제네시스 및 보완의학 연구소(ISCM) 음악치료학과 행정 책임자",
+          "인도 스리 발라지 비디야피트",
+        ],
+      },
+      {
+        linesEn: [
+          "Dr. Bhuvaneswari Chandrasekar, PhD",
+          "Assistant Professor of Music Therapy, ISCM",
+          "Sri Balaji Vidyapeeth, India",
+          "Regional Liaison for Southeast Asia, World Federation of Music Therapy",
+          "Vice President, Puducherry Chapter, NAPCAIM",
+        ],
+        linesKo: [
+          "부바네스와리 찬드라세카르 박사 (PhD)",
+          "인도 스리 발라지 비디야피트 ISCM 음악치료학과 조교수",
+          "세계음악치료연맹(WFMT) 동남아시아 지역 연락관",
+          "NAPCAIM 퐁디셰리 지부 부회장",
+        ],
+      },
+      {
+        linesEn: [
+          "Yogacharini Dr. Sangeeta Laura Biagi, PhD",
+          "Founder & Director, Gitananda Nada Yoga",
+          "International Visiting Faculty, ISCM",
+          "Sri Balaji Vidyapeeth, India",
+          "Professor of Yoga Studies, Istituto Lorenzo de' Medici, Florence, Italy",
+        ],
+        linesKo: [
+          "요가차리니 상기타 라우라 비아지 박사 (PhD)",
+          "기타난다 나다 요가 설립자 겸 디렉터",
+          "인도 스리 발라지 비디야피트 ISCM 국제 초빙교수",
+          "이탈리아 피렌체 로렌초 데 메디치 연구소 요가학 교수",
+        ],
+      },
     ],
+  },
+  culturalRespect: {
+    titleEn: "With Respect and Gratitude",
+    bodyEn: [
+      "I honour the Aboriginal peoples of Australia and the living cultures connected to the yidaki and didgeridoo.",
+      "I approach this instrument with respect, gratitude, and humility.",
+    ],
+    titleKo: "존중과 감사의 마음으로",
+    bodyKo: [
+      "호주 원주민들의 살아 있는 문화와 yidaki 및 디저리두에 이어져 온 전통에 존중과 경의를 표합니다.",
+      "저는 이 악기를 감사와 겸손의 마음으로 대하고자 합니다.",
+    ],
+  },
+  contact: {
+    eyebrow: "",
+    heading: "Contact",
+    email: "fullmoonstay@naver.com",
+    instagramHandle: "medicalmusictherapist.sarang",
+    instagramUrl: "https://www.instagram.com/medicalmusictherapist.sarang",
   },
   footer: {
-    email: "contact@example.com",
-    phone: "+82 10 0000 0000",
-    copyright: "© 2026 ABC",
+    copyright: "© 2026 Jin Sarang",
   },
 };

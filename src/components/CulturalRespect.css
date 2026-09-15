@@ -1,0 +1,44 @@
+.cultural-respect {
+  border-top: var(--rule-med) solid var(--line-hair);
+  text-align: center;
+}
+
+.cultural-respect__block {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cultural-respect__block--ko {
+  margin-top: var(--sp-9);
+  padding-top: var(--sp-8);
+  border-top: var(--hair) solid var(--line-soft);
+}
+
+.cultural-respect__title {
+  margin: 0;
+  font-size: var(--body-md);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-body);
+}
+
+.cultural-respect__title--ko {
+  font-family: var(--font-ko);
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+.cultural-respect__body {
+  margin: var(--sp-6) 0 0;
+  font-size: var(--body-md);
+  line-height: 1.4;
+  color: var(--text-body);
+}
+
+.cultural-respect__body--ko {
+  font-family: var(--font-ko);
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  color: var(--text-muted);
+}

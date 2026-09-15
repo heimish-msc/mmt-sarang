@@ -1,6 +1,8 @@
 import { useLanguage } from "../i18n/LanguageContext.jsx";
-import { PageMeta } from "../ds/editorial/PageMeta.jsx";
 import { DisplayHeading } from "../ds/editorial/DisplayHeading.jsx";
+import { Caption } from "../ds/editorial/Caption.jsx";
+import { PullQuote } from "../ds/editorial/PullQuote.jsx";
+import { Figure } from "../ds/editorial/Figure.jsx";
 import "./Hero.css";
 
 export default function Hero() {
@@ -10,21 +12,30 @@ export default function Hero() {
   return (
     <section id="top" className="hero">
       <div className="container">
-        <PageMeta items={hero.meta} />
-        <div className="hero__body">
-          <DisplayHeading as="h1" size="xxl">
-            {hero.headline.map((line, i) => (
-              <span key={i}>
+        <Figure
+          src="/images/hero/01.png"
+          alt={hero.name}
+          ratio="16/9"
+          className="hero__photo"
+        />
+
+        <div className="hero__identity">
+          <DisplayHeading as="h1" size="xl">
+            {hero.name}
+          </DisplayHeading>
+          <Caption tone="muted" style={{ marginTop: 20, marginLeft: 4, fontSize: 14 }}>
+            {hero.role}
+          </Caption>
+        </div>
+
+        <div className="hero__philosophy">
+          <PullQuote>
+            {hero.philosophy.map((line, i) => (
+              <span className="hero__philosophy-line" key={i}>
                 {line}
-                {i < hero.headline.length - 1 ? <br /> : null}
               </span>
             ))}
-          </DisplayHeading>
-          <div className="hero__bio">
-            {hero.bio.map((paragraph, i) => (
-              <p key={i}>{paragraph}</p>
-            ))}
-          </div>
+          </PullQuote>
         </div>
       </div>
     </section>
