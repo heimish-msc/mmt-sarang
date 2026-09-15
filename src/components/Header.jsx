@@ -8,7 +8,7 @@ export default function Header() {
     <header className="header">
       <div className="container header__inner">
         <a href="#top" className="header__wordmark">
-          {t.nav.name}
+          <img src="/images/name.png" alt={t.nav.name} className="header__logo" />
         </a>
         <button
           type="button"
