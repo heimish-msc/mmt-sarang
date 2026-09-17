@@ -24,7 +24,9 @@ export default function AdvisoryBoard() {
               <div className="advisory-board__card" key={i}>
                 <CircleBadge>{index}</CircleBadge>
 
-                <div className="advisory-board__name">{nameEn}</div>
+                <div className="advisory-board__name">
+                  <span className="advisory-board__name-text">{nameEn}</span>
+                </div>
 
                 <div className="advisory-board__block">
                   {restEn.map((line, j) => (

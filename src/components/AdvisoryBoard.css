@@ -12,17 +12,26 @@
   margin-top: var(--sp-11);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--sp-10);
+  grid-template-rows: repeat(4, auto);
+  column-gap: var(--sp-10);
+  row-gap: 0;
 }
 
 .advisory-board__card {
-  container-type: inline-size;
+  display: grid;
+  grid-row: span 4;
+  grid-template-rows: subgrid;
   border-top: var(--rule-med) solid var(--line-hair);
   padding-top: var(--sp-6);
 }
 
 .advisory-board__name {
+  container-type: inline-size;
   margin-top: var(--sp-6);
+}
+
+.advisory-board__name-text {
+  display: block;
   font-family: var(--font-display);
   font-size: clamp(11px, 4.3cqw, var(--title-sm));
   font-weight: 700;
@@ -60,6 +69,13 @@
 @media (max-width: 900px) {
   .advisory-board__grid {
     grid-template-columns: 1fr;
-    gap: var(--sp-11);
+  }
+
+  .advisory-board__card {
+    padding-top: var(--sp-8);
+  }
+
+  .advisory-board__card + .advisory-board__card {
+    margin-top: var(--sp-10);
   }
 }
