@@ -1,0 +1,26 @@
+.video-links {
+  border-top: var(--hair) solid var(--line-hair);
+}
+
+.video-links__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-10);
+}
+
+.video-links__item {
+  display: block;
+  border-bottom: none;
+  transition: opacity var(--dur-med) var(--ease-standard);
+}
+
+.video-links__item:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+  .video-links__grid {
+    grid-template-columns: 1fr;
+    gap: var(--sp-9);
+  }
+}

@@ -13,7 +13,7 @@ export default function Hero() {
     <section id="top" className="hero">
       <div className="container">
         <Figure
-          src="/images/hero/01.png"
+          src="/images/videos/instrument.jpg"
           alt={hero.name}
           ratio="16/9"
           className="hero__photo"
@@ -31,7 +31,7 @@ export default function Hero() {
         <div className="hero__philosophy">
           <PullQuote>
             {hero.philosophy.map((line, i) => (
-              <span className="hero__philosophy-line" key={i}>
+              <span className={`hero__philosophy-line hero__philosophy-line--${i}`} key={i}>
                 {line}
               </span>
             ))}

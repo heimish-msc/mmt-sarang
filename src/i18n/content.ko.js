@@ -15,7 +15,8 @@ export const content = {
     philosophy: [
       "Listening is a Form of Self-Care.",
       "I believe the power to heal is within me.",
-      "I am gifted. So are you.",
+      "I am gifted.",
+      "So are you.",
     ],
   },
   thesis: {
@@ -100,6 +101,10 @@ export const content = {
       },
     ],
   },
+  videos: [
+    { href: "https://www.instagram.com/p/DdUAktmq8Ch/", alt: "소개 영상" },
+    { href: "https://www.instagram.com/p/DdTtMPYqFYJ/", alt: "악기 소리 영상" },
+  ],
   culturalRespect: {
     titleEn: "With Respect and Gratitude",
     bodyEn: [

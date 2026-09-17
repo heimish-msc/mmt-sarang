@@ -15,26 +15,26 @@
 .hero__philosophy {
   margin-top: var(--sp-12);
   max-width: 480px;
-  margin-left: auto;
-  text-align: right;
 }
 
 .hero__philosophy blockquote {
-  padding-top: var(--sp-12) !important;
+  border-top: none !important;
+  padding-top: 0 !important;
 }
 
 .hero__philosophy blockquote p {
   font-size: var(--title-md) !important;
-  line-height: 2.3 !important;
-  color: #7DB360 !important;
+  line-height: 2 !important;
+  color: var(--text-display) !important;
+  text-align: left !important;
 }
 
 .hero__philosophy-line {
   display: block;
 }
 
-.hero__philosophy-line:nth-of-type(2) {
-  text-align: left;
+.hero__philosophy-line--1 {
+  font-style: italic;
 }
 
 .hero__philosophy-line + .hero__philosophy-line {
