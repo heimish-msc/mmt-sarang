@@ -19,14 +19,14 @@
   font-size: var(--body-md);
   font-weight: 400;
   line-height: 1.4;
-  color: var(--text-body);
+  color: #7DB360;
 }
 
 .cultural-respect__title--ko {
   font-family: var(--font-ko);
   letter-spacing: -0.01em;
   line-height: 1.4;
-  color: var(--text-muted);
+  color: #7DB360;
 }
 
 .cultural-respect__body {

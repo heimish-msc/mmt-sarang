@@ -16,6 +16,7 @@
 }
 
 .advisory-board__card {
+  container-type: inline-size;
   border-top: var(--rule-med) solid var(--line-hair);
   padding-top: var(--sp-6);
 }
@@ -23,11 +24,14 @@
 .advisory-board__name {
   margin-top: var(--sp-6);
   font-family: var(--font-display);
-  font-size: var(--title-sm);
+  font-size: clamp(11px, 4.3cqw, var(--title-sm));
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.02em;
   color: var(--text-display);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .advisory-board__block {

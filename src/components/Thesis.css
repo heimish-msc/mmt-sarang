@@ -4,25 +4,21 @@
 
 .thesis__layout {
   margin-top: var(--sp-11);
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: var(--sp-10);
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thesis__photo {
+  width: 100%;
+  max-width: 560px;
 }
 
 .thesis__summary {
+  margin-top: var(--sp-10);
   font-size: var(--body-md);
   line-height: var(--lh-body);
   color: var(--text-body);
   max-width: var(--measure);
-}
-
-@media (max-width: 720px) {
-  .thesis__layout {
-    grid-template-columns: 1fr;
-  }
-
-  .thesis__photo {
-    max-width: 320px;
-  }
+  text-align: center;
 }

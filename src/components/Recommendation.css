@@ -34,7 +34,7 @@
   margin: 0 0 var(--sp-6);
   font-size: var(--body-md);
   line-height: var(--lh-body);
-  color: var(--paper-200);
+  color: var(--text-body);
 }
 
 .recommendation__paragraph:last-of-type {
@@ -43,7 +43,7 @@
 
 .recommendation__signature {
   margin-top: var(--sp-7);
-  border-top: var(--hair) solid var(--line-invert);
+  border-top: var(--hair) solid var(--line-hair);
   padding-top: var(--sp-5);
 }
 

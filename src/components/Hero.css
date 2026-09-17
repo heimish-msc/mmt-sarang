@@ -7,22 +7,34 @@
   margin-top: var(--sp-9);
 }
 
+.hero__identity h1 {
+  margin-top: var(--sp-12) !important;
+  font-weight: 600 !important;
+}
+
 .hero__philosophy {
   margin-top: var(--sp-12);
-  max-width: 640px;
+  max-width: 480px;
+  margin-left: auto;
+  text-align: right;
 }
 
 .hero__philosophy blockquote {
-  padding-top: var(--sp-9) !important;
+  padding-top: var(--sp-12) !important;
 }
 
 .hero__philosophy blockquote p {
   font-size: var(--title-md) !important;
-  line-height: 1.35 !important;
+  line-height: 2.3 !important;
+  color: #7DB360 !important;
 }
 
 .hero__philosophy-line {
   display: block;
+}
+
+.hero__philosophy-line:nth-of-type(2) {
+  text-align: left;
 }
 
 .hero__philosophy-line + .hero__philosophy-line {
