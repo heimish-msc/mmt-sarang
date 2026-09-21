@@ -3,6 +3,11 @@ export const content = {
   nav: {
     name: "Jin Sarang°",
     toggleLabel: "KO",
+    home: "About",
+    program: "Program",
+    research: "Research",
+    workshops: "Workshops",
+    performances: "Performances",
   },
   hero: {
     meta: [
@@ -105,6 +110,43 @@ export const content = {
     { href: "https://www.instagram.com/p/DdUAktmq8Ch/", alt: "Introduction video" },
     { href: "https://www.instagram.com/p/DdTtMPYqFYJ/", alt: "Instrument sound video" },
   ],
+  program: {
+    eyebrow: "",
+    heading: "Didgeridoo-Based Embodied Listening Program",
+  },
+  research: {
+    eyebrow: "",
+    heading: "Research & Publications",
+    items: [
+      { title: "Conference Presentation", description: "Description", images: ["/images/research/01.jpg"] },
+      { title: "Copyright", description: "Description", images: ["/images/research/02.jpg"] },
+      { title: "Graduate Education", description: "Description", images: ["/images/research/03.jpg", "/images/research/04.jpg"], captionBelow: true },
+      { title: "Thaut Neurologic Music Therapy (NMT) Training & Certificate", description: "Description", images: ["/images/research/05.jpg", "/images/research/06.jpg"], captionBelow: true },
+    ],
+    writing: {
+      title: "Medium",
+      cta: "Read on Medium",
+      href: "https://medium.com/@medicalmusictherapist.sarang",
+    },
+  },
+  workshops: {
+    eyebrow: "",
+    heading: "Workshops",
+    items: [
+      { title: "Gitananda", description: "Description", images: [null, null, null] },
+      { title: "Swaram Workshop", description: "Description", images: [null, null, null] },
+      { title: "Transgender Association Workshop", description: "Description", images: [null] },
+      { title: "Natural Birth Center Workshop", description: "Description", images: [null] },
+      { title: "Press Coverage", description: "Description", images: [null] },
+      { title: "Workshop Anju", description: "Description", images: [null] },
+    ],
+  },
+  performances: {
+    eyebrow: "",
+    heading: "Performances",
+    intro: "Introduction",
+    images: [null, null, null, null, null, null],
+  },
   culturalRespect: {
     titleEn: "With Respect and Gratitude",
     bodyEn: [

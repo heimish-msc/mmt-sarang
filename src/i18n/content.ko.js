@@ -3,6 +3,11 @@ export const content = {
   nav: {
     name: "진사랑°",
     toggleLabel: "EN",
+    home: "소개",
+    program: "프로그램",
+    research: "연구/출판",
+    workshops: "워크숍",
+    performances: "공연",
   },
   hero: {
     meta: [
@@ -105,6 +110,43 @@ export const content = {
     { href: "https://www.instagram.com/p/DdUAktmq8Ch/", alt: "소개 영상" },
     { href: "https://www.instagram.com/p/DdTtMPYqFYJ/", alt: "악기 소리 영상" },
   ],
+  program: {
+    eyebrow: "Program",
+    heading: "디저리두-기반 임바디 (Embodied) 리스닝 프로그램",
+  },
+  research: {
+    eyebrow: "Research & Publications",
+    heading: "연구/출판",
+    items: [
+      { title: "컨퍼런스 발표", description: "설명 내용", images: ["/images/research/01.jpg"] },
+      { title: "저작권", description: "설명 내용", images: ["/images/research/02.jpg"] },
+      { title: "졸업생 교육", description: "설명 내용", images: ["/images/research/03.jpg", "/images/research/04.jpg"], captionBelow: true },
+      { title: "Thaut 신경음악치료(NMT) 이수 및 자격증", description: "설명 내용", images: ["/images/research/05.jpg", "/images/research/06.jpg"], captionBelow: true },
+    ],
+    writing: {
+      title: "Medium",
+      cta: "Medium에서 글 읽기",
+      href: "https://medium.com/@medicalmusictherapist.sarang",
+    },
+  },
+  workshops: {
+    eyebrow: "Workshops",
+    heading: "워크숍",
+    items: [
+      { title: "기타난다", description: "설명 내용", images: [null, null, null] },
+      { title: "스와람 워크숍", description: "설명 내용", images: [null, null, null] },
+      { title: "트랜스젠더협회 워크숍", description: "설명 내용", images: [null] },
+      { title: "자연주의출산센터 워크숍", description: "설명 내용", images: [null] },
+      { title: "신문 기사", description: "설명 내용", images: [null] },
+      { title: "워크숍 안주", description: "설명 내용", images: [null] },
+    ],
+  },
+  performances: {
+    eyebrow: "Performances",
+    heading: "공연",
+    intro: "소개글 내용",
+    images: [null, null, null, null, null, null],
+  },
   culturalRespect: {
     titleEn: "With Respect and Gratitude",
     bodyEn: [

@@ -1,26 +1,30 @@
 import { LanguageProvider } from "./i18n/LanguageContext.jsx";
+import { useRoute } from "./router.js";
 import Header from "./components/Header.jsx";
-import Hero from "./components/Hero.jsx";
-import Thesis from "./components/Thesis.jsx";
-import Recommendation from "./components/Recommendation.jsx";
-import AdvisoryBoard from "./components/AdvisoryBoard.jsx";
-import VideoLinks from "./components/VideoLinks.jsx";
-import CulturalRespect from "./components/CulturalRespect.jsx";
-import Contact from "./components/Contact.jsx";
 import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import Program from "./pages/Program.jsx";
+import Research from "./pages/Research.jsx";
+import Workshops from "./pages/Workshops.jsx";
+import Performances from "./pages/Performances.jsx";
+
+const pages = {
+  home: Home,
+  program: Program,
+  research: Research,
+  workshops: Workshops,
+  performances: Performances,
+};
 
 export default function App() {
+  const route = useRoute();
+  const Page = pages[route];
+
   return (
     <LanguageProvider>
-      <Header />
+      <Header route={route} />
       <main>
-        <Hero />
-        <Thesis />
-        <Recommendation />
-        <AdvisoryBoard />
-        <VideoLinks />
-        <CulturalRespect />
-        <Contact />
+        <Page />
       </main>
       <Footer />
     </LanguageProvider>

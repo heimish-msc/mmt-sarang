@@ -1,0 +1,9 @@
+.image-slot {
+  width: 100%;
+  background: var(--ink-200);
+}
+
+.image-slot__img {
+  width: 100%;
+  height: auto;
+}
