@@ -18,6 +18,14 @@
   opacity: 0.85;
 }
 
+.video-links__title {
+  margin: var(--sp-5) 0 0;
+  font-family: var(--font-display);
+  font-size: var(--body-md);
+  font-weight: 600;
+  color: var(--text-display);
+}
+
 @media (max-width: 900px) {
   .video-links__grid {
     grid-template-columns: 1fr;

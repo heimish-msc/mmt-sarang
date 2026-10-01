@@ -1,0 +1,32 @@
+.program-approach__heading {
+  font-family: var(--font-display);
+  font-size: var(--title-lg);
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--text-display);
+  text-wrap: balance;
+}
+
+.program-approach__block {
+  margin-top: var(--sp-9);
+}
+
+.program-approach__title {
+  margin: 0 0 var(--sp-5);
+  font-family: var(--font-display);
+  font-size: var(--title-sm);
+  font-weight: 700;
+  color: var(--text-display);
+}
+
+.program-approach__body {
+  margin: 0;
+  font-size: var(--body-md);
+  line-height: var(--lh-body);
+  color: var(--text-body);
+  max-width: var(--measure);
+}
+
+.program-approach__body + .program-approach__body {
+  margin-top: var(--sp-5);
+}

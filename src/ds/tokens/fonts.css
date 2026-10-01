@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+KR:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+KR:wght@400;500;600;700;800&family=Baloo+2:wght@400;500;600;700;800&family=Jua&display=swap");
 
 @font-face{font-family:"Pretendard Variable";font-weight:45 920;font-style:normal;font-display:swap;src:url("https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/woff2/PretendardVariable.woff2") format("woff2-variations")}
 
@@ -7,4 +7,5 @@
   --font-text:"Avenir Next","Avenir","Pretendard Variable","Century Gothic","Helvetica Neue",Helvetica,sans-serif;
   --font-meta:"Avenir Next","Avenir","Pretendard Variable","Century Gothic","Helvetica Neue",Helvetica,sans-serif;
   --font-ko:"Pretendard Variable","Avenir Next","Avenir",sans-serif;
+  --font-round:"Baloo 2","Jua","Pretendard Variable",sans-serif;
 }

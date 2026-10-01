@@ -1,0 +1,23 @@
+.program-highlight__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: var(--hair) solid var(--line-hair);
+}
+
+.program-highlight__apply {
+  display: inline-block;
+  margin-top: var(--sp-7);
+  padding: var(--sp-5) var(--sp-8);
+  border: 1px solid var(--ink-1000) !important;
+  font-family: var(--font-meta);
+  font-size: var(--body-md);
+  font-weight: 600;
+  color: var(--text-display);
+  transition: background var(--dur-med) var(--ease-standard), color var(--dur-med) var(--ease-standard);
+}
+
+.program-highlight__apply:hover {
+  background: var(--ink-1000);
+  color: var(--paper-50);
+}

@@ -1,0 +1,9 @@
+.program-page__block {
+  margin-top: var(--sp-13);
+  padding-top: var(--sp-11);
+  border-top: var(--hair) solid var(--line-hair);
+}
+
+.program-approach {
+  margin-top: var(--sp-11);
+}

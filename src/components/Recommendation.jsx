@@ -5,7 +5,7 @@ import { Figure } from "../ds/editorial/Figure.jsx";
 import "./Recommendation.css";
 
 export default function Recommendation() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const { recommendation } = t;
 
   return (
@@ -47,6 +47,29 @@ export default function Recommendation() {
                     {letter.affiliation}
                   </Caption>
                 </div>
+
+                {lang === "ko" && letter.paragraphsKo ? (
+                  <div className="recommendation__block--ko">
+                    {letter.noteKo ? (
+                      <p className="recommendation__note--ko">{letter.noteKo}</p>
+                    ) : null}
+                    {letter.headingKo ? (
+                      <h4 className="recommendation__heading--ko">{letter.headingKo}</h4>
+                    ) : null}
+                    {letter.paragraphsKo.map((p, j) => (
+                      <p className="recommendation__paragraph recommendation__paragraph--ko" key={j}>
+                        {p}
+                      </p>
+                    ))}
+                    <div className="recommendation__signature">
+                      <Caption>{letter.nameKo}</Caption>
+                      <Caption style={{ opacity: 0.65, marginTop: 4 }}>{letter.titleKo}</Caption>
+                      <Caption style={{ opacity: 0.65, marginTop: 2 }}>
+                        {letter.affiliationKo}
+                      </Caption>
+                    </div>
+                  </div>
+                ) : null}
               </div>
             </div>
           ))}

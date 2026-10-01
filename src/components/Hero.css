@@ -3,13 +3,49 @@
   padding-bottom: var(--sp-13);
 }
 
-.hero__identity {
+.hero__logo {
+  display: block;
+  height: 90px;
+  width: auto;
+  margin: 0 auto var(--sp-9);
+}
+
+.hero__intro {
   margin-top: var(--sp-9);
+  display: grid;
+  grid-template-columns: minmax(0, 280px) minmax(0, 1fr);
+  gap: var(--sp-11);
+  align-items: start;
 }
 
 .hero__identity h1 {
   margin-top: var(--sp-12) !important;
   font-weight: 600 !important;
+}
+
+.hero__bio {
+  margin-top: var(--sp-12);
+}
+
+.hero__bio-paragraph {
+  font-size: var(--body-md);
+  line-height: var(--lh-body);
+  color: var(--text-body);
+}
+
+.hero__bio-paragraph + .hero__bio-paragraph {
+  margin-top: var(--sp-6);
+}
+
+@media (max-width: 900px) {
+  .hero__intro {
+    grid-template-columns: 1fr;
+    gap: var(--sp-9);
+  }
+
+  .hero__bio {
+    margin-top: 0;
+  }
 }
 
 .hero__philosophy {

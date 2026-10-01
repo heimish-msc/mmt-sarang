@@ -21,6 +21,7 @@ export default function VideoLinks() {
               key={i}
             >
               <Figure src={images[i]} alt={video.alt} ratio="16/9" />
+              {video.title ? <p className="video-links__title">{video.title}</p> : null}
             </a>
           ))}
         </div>

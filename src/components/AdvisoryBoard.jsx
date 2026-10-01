@@ -15,6 +15,9 @@ export default function AdvisoryBoard() {
         <DisplayHeading size="md" style={{ marginTop: advisoryBoard.eyebrow ? 20 : 0 }}>
           {advisoryBoard.heading}
         </DisplayHeading>
+        {advisoryBoard.description ? (
+          <p className="advisory-board__description">{advisoryBoard.description}</p>
+        ) : null}
 
         <div className="advisory-board__grid">
           {advisoryBoard.members.map((member, i) => {

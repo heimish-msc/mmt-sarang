@@ -8,8 +8,16 @@
   line-height: 1.2 !important;
 }
 
+.advisory-board__description {
+  margin-top: var(--sp-6);
+  max-width: var(--measure);
+  font-size: var(--body-md);
+  line-height: var(--lh-body);
+  color: var(--text-muted);
+}
+
 .advisory-board__grid {
-  margin-top: var(--sp-11);
+  margin-top: var(--sp-10);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);

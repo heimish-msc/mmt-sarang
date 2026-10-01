@@ -3,6 +3,7 @@ import { DisplayHeading } from "../ds/editorial/DisplayHeading.jsx";
 import { Caption } from "../ds/editorial/Caption.jsx";
 import { PullQuote } from "../ds/editorial/PullQuote.jsx";
 import { Figure } from "../ds/editorial/Figure.jsx";
+import { withBold } from "../lib/richText.jsx";
 import "./Hero.css";
 
 export default function Hero() {
@@ -12,6 +13,8 @@ export default function Hero() {
   return (
     <section id="top" className="hero">
       <div className="container">
+        <img src="/favicon.png" alt="" className="hero__logo" />
+
         <Figure
           src="/images/videos/instrument.jpg"
           alt={hero.name}
@@ -19,13 +22,25 @@ export default function Hero() {
           className="hero__photo"
         />
 
-        <div className="hero__identity">
-          <DisplayHeading as="h1" size="xl">
-            {hero.name}
-          </DisplayHeading>
-          <Caption tone="muted" style={{ marginTop: 20, marginLeft: 4, fontSize: 14 }}>
-            {hero.role}
-          </Caption>
+        <div className="hero__intro">
+          <div className="hero__identity">
+            <DisplayHeading as="h1" size="xl">
+              {hero.name}
+            </DisplayHeading>
+            <Caption tone="muted" style={{ marginTop: 20, marginLeft: 4, fontSize: 14 }}>
+              {hero.role}
+            </Caption>
+          </div>
+
+          {hero.bio ? (
+            <div className="hero__bio">
+              {hero.bio.map((p, i) => (
+                <p className="hero__bio-paragraph" key={i}>
+                  {withBold(p)}
+                </p>
+              ))}
+            </div>
+          ) : null}
         </div>
 
         <div className="hero__philosophy">
