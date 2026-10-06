@@ -7,6 +7,7 @@ import Program from "./pages/Program.jsx";
 import Research from "./pages/Research.jsx";
 import Workshops from "./pages/Workshops.jsx";
 import Performances from "./pages/Performances.jsx";
+import Admin from "./admin/Admin.jsx";
 
 const pages = {
   home: Home,
@@ -18,6 +19,7 @@ const pages = {
 
 export default function App() {
   const route = useRoute();
+  if (route === "admin") return <Admin />;
   const Page = pages[route];
 
   return (

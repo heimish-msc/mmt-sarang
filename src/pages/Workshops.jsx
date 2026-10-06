@@ -1,6 +1,6 @@
 import { useLanguage } from "../i18n/LanguageContext.jsx";
 import PageHeader from "../components/PageHeader.jsx";
-import MediaItem from "../components/MediaItem.jsx";
+import WorkshopItem from "../components/WorkshopItem.jsx";
 import "./Page.css";
 
 export default function Workshops() {
@@ -12,9 +12,9 @@ export default function Workshops() {
       <div className="container">
         <PageHeader eyebrow={workshops.eyebrow} heading={workshops.heading} />
 
-        <div className="media-list">
+        <div className="workshop-list">
           {workshops.items.map((item, i) => (
-            <MediaItem key={i} {...item} />
+            <WorkshopItem key={i} index={i} {...item} />
           ))}
         </div>
       </div>

@@ -83,6 +83,20 @@
   margin-left: auto;
 }
 
+.header__settings {
+  position: absolute;
+  left: var(--page-margin-sm);
+  bottom: var(--sp-9);
+  display: inline-flex;
+  color: var(--text-muted);
+  border-bottom: none;
+  transition: color var(--dur-med) var(--ease-standard);
+}
+
+.header__settings:hover {
+  color: var(--text-display);
+}
+
 .header__nav {
   margin-top: var(--sp-10);
   display: flex;

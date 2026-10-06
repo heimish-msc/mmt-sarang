@@ -16,7 +16,7 @@ export default function Hero() {
         <img src="/favicon.png" alt="" className="hero__logo" />
 
         <Figure
-          src="/images/videos/instrument.jpg"
+          src={hero.photo}
           alt={hero.name}
           ratio="16/9"
           className="hero__photo"

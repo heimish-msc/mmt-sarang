@@ -10,6 +10,7 @@ export const content = {
     performances: "Performances",
   },
   hero: {
+    photo: "/images/videos/instrument.jpg",
     meta: [
       { label: "Jin Sarang — Music Therapist" },
       { label: "Portfolio 2026" },
@@ -33,6 +34,7 @@ export const content = {
     ],
   },
   thesis: {
+    photo: "/images/thesis/02.jpg",
     eyebrow: "",
     heading: "Thesis",
     summary: "Summary content",
@@ -138,11 +140,13 @@ export const content = {
   videos: [
     {
       href: "https://www.instagram.com/p/DdUAktmq8Ch/",
+      image: "/images/videos/intro.jpg",
       alt: "Introduction video",
       title: "Understanding the Didgeridoo",
     },
     {
       href: "https://www.instagram.com/p/DdTtMPYqFYJ/",
+      image: "/images/videos/instrument.jpg",
       alt: "Instrument sound video",
       title: "Listen to the Didgeridoo",
     },

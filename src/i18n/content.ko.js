@@ -10,6 +10,7 @@ export const content = {
     performances: "공연",
   },
   hero: {
+    photo: "/images/videos/instrument.jpg",
     meta: [
       { label: "진사랑 — 메디컬 음악치료사 & 디저리두 연주자" },
       { label: "포트폴리오 2026" },
@@ -33,6 +34,7 @@ export const content = {
     ],
   },
   thesis: {
+    photo: "/images/thesis/02.jpg",
     eyebrow: "Thesis",
     heading: "논문",
     summary: "요약문 내용",
@@ -138,11 +140,13 @@ export const content = {
   videos: [
     {
       href: "https://www.instagram.com/p/DdUAktmq8Ch/",
+      image: "/images/videos/intro.jpg",
       alt: "소개 영상",
       title: "디저리두를 이해하다",
     },
     {
       href: "https://www.instagram.com/p/DdTtMPYqFYJ/",
+      image: "/images/videos/instrument.jpg",
       alt: "악기 소리 영상",
       title: "디저리두를 들어보세요",
     },

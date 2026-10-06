@@ -18,7 +18,7 @@ export default function Thesis() {
 
         <div className="thesis__layout">
           <Figure
-            src="/images/thesis/02.jpg"
+            src={thesis.photo}
             alt={thesis.heading}
             ratio="2/3"
             className="thesis__photo"

@@ -2,11 +2,11 @@ import { useState } from "react";
 import ImageSlot from "./ImageSlot.jsx";
 import "./MediaItem.css";
 
-function EqualHeightImages({ images, alt }) {
+export function EqualHeightImages({ images, alt, className = "" }) {
   const [ratios, setRatios] = useState({});
 
   return (
-    <div className="media-item__images media-item__images--equal">
+    <div className={`media-item__images media-item__images--equal ${className}`}>
       {images.map((src, i) => (
         <img
           key={i}

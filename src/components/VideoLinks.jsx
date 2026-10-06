@@ -2,8 +2,6 @@ import { useLanguage } from "../i18n/LanguageContext.jsx";
 import { Figure } from "../ds/editorial/Figure.jsx";
 import "./VideoLinks.css";
 
-const images = ["/images/videos/intro.jpg", "/images/videos/instrument.jpg"];
-
 export default function VideoLinks() {
   const { t } = useLanguage();
   const { videos } = t;
@@ -20,7 +18,7 @@ export default function VideoLinks() {
               rel="noopener noreferrer"
               key={i}
             >
-              <Figure src={images[i]} alt={video.alt} ratio="16/9" />
+              <Figure src={video.image} alt={video.alt} ratio="16/9" />
               {video.title ? <p className="video-links__title">{video.title}</p> : null}
             </a>
           ))}
