@@ -197,7 +197,7 @@ export const content = {
       image: "/images/program/embodied-listening-en.webp",
       alt: "Diagram introducing the Didgeridoo-based Embodied Listening program",
       applyLabel: "Apply",
-      applyHref: "#",
+      applyHref: "https://forms.gle/HDfNeipKM8vxSapD9",
     },
 
     testimonials: {
@@ -316,10 +316,29 @@ export const content = {
     eyebrow: "",
     heading: "Research & Publications",
     items: [
-      { title: "Conference Presentation", description: "Description", images: ["/images/research/01.jpg"] },
-      { title: "Copyright", description: "Description", images: ["/images/research/02.jpg"] },
-      { title: "Graduate Education", description: "Description", images: ["/images/research/03.jpg", "/images/research/04.jpg"], captionBelow: true },
-      { title: "Thaut Neurologic Music Therapy (NMT) Training & Certificate", description: "Description", images: ["/images/research/05.jpg", "/images/research/06.jpg"], captionBelow: true },
+      {
+        title: "Conference Presentation",
+        description: "At the International Music Therapy Conference, I presented a case on how the didgeridoo was used in clinical treatment within a hospital setting. This particular case involved a patient who was hospitalized in a psychiatric unit for alcohol use disorder (AUD).",
+        link: { label: "View OCMT 2024 schedule", href: "https://onlineconferenceformusictherapy.com/ocmt-schedule-2024/" },
+        images: ["/images/research/01.jpg"],
+      },
+      {
+        title: "Copyright",
+        description: "The research curriculum for the “Effects of a 10-Week Therapeutic Didgeridoo Program” has been approved for copyright registration by the Government of India.",
+        images: ["/images/research/02.jpg"],
+      },
+      {
+        title: "Graduate Education",
+        description: "Provided education to master’s students in Music Therapy at the same graduate school on the characteristics and therapeutic applications of the didgeridoo, including practical training to enable them to play the instrument directly as music therapists in patient care and clinical settings.",
+        images: ["/images/research/03.jpg", "/images/research/04.jpg"],
+        captionBelow: true,
+      },
+      {
+        title: "Completed Introductory Training in Neurologic Music Therapy (NMT) and Received a Certificate",
+        description: "Completed introductory training in Neurologic Music Therapy (NMT) under Dr. Michael H. Thaut at JIPMER Medical College.",
+        images: ["/images/research/05.jpg", "/images/research/06.jpg"],
+        captionBelow: true,
+      },
     ],
     writing: {
       title: "Medium",
@@ -331,19 +350,53 @@ export const content = {
     eyebrow: "",
     heading: "Workshops",
     items: [
-      { title: "Gitananda", description: "Description", images: [null, null, null] },
-      { title: "Swaram Workshop", description: "Description", images: [null, null, null] },
-      { title: "Transgender Association Workshop", description: "Description", images: [null] },
-      { title: "Natural Birth Center Workshop", description: "Description", images: [null] },
-      { title: "Press Coverage", description: "Description", images: [null] },
-      { title: "Workshop Anju", description: "Description", images: [null] },
+      {
+        title: "Gitananda Nada Yoga",
+        description: "As part of the Gitananda Nada Yoga programme led by Dr. Sangeeta Laura Biagi at ICYER, Ananda Ashram, Puducherry, India, I conducted a session on the therapeutic effects of playing the didgeridoo.",
+        images: ["/images/workshops/gitananda-01.jpg", "/images/workshops/gitananda-02.jpg", "/images/workshops/gitananda-03.jpg"],
+        captionBelow: true,
+      },
+      {
+        title: "SVARAM Workshop",
+        description: "In 2023, I completed the ISSP (Integral Sound Studies and Practices) programme at SVARAM, a sound research and educational institution in Auroville, India. I presented on the diverse therapeutic applications of the didgeridoo, ranging from sound meditation and wellness practices to therapeutic approaches for hospital patients, introducing its healing potential to a wider audience.",
+        images: ["/images/workshops/svaram-01.jpg", "/images/workshops/svaram-02.jpg"],
+        captionBelow: true,
+      },
+      {
+        title: "Transgender Association Workshop",
+        description: "Conducted a workshop on self-care through the didgeridoo for the transgender community in Puducherry, India.",
+        images: ["/images/workshops/transgender-01.jpg"],
+      },
+      {
+        title: "Natural Birth Center Workshop",
+        description: "Facilitated a prenatal wellness programme at Morning Star, a natural birthing centre in Auroville, India, for expectant mothers and their partners, incorporating the didgeridoo and breathwork.",
+        images: ["/images/workshops/birth-center-01.jpg"],
+      },
+      {
+        title: "Press Coverage",
+        description: "In collaboration with Alliance Française de Pondichéry, I participated as a member of our university’s Music Therapy team in a health-promotion program integrating music and yoga. The program was featured in The Hindu – Tamil Nadu on June 21, 2023.",
+        images: ["/images/workshops/press-01.jpg"],
+      },
+      { title: "Workshop Anju", description: "Description", images: ["/images/workshops/notice-01.jpg"] },
     ],
   },
   performances: {
     eyebrow: "",
     heading: "Performances",
     intro: "Introduction",
-    images: [null, null, null, null, null, null],
+    images: [
+      "/images/performances/perf-01.jpg",
+      "/images/performances/perf-02.jpg",
+      "/images/performances/perf-03.jpg",
+      "/images/performances/perf-04.jpg",
+      "/images/performances/perf-05.jpg",
+      "/images/performances/perf-06.jpg",
+      "/images/performances/perf-07.jpg",
+      "/images/performances/perf-08.jpg",
+      "/images/performances/perf-09.jpg",
+      "/images/performances/perf-10.jpg",
+      "/images/performances/perf-11.jpg",
+    ],
   },
   culturalRespect: {
     titleEn: "With Respect and Gratitude",

@@ -14,4 +14,5 @@ const localApi = () => ({
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), localApi()],
+  server: { port: Number(process.env.PORT) || 5173 },
 })

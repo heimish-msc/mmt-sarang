@@ -8,14 +8,23 @@
 
 .performances__grid {
   margin-top: var(--sp-11);
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--sp-10);
+  column-count: 3;
+  column-gap: var(--sp-8);
+}
+
+.performances__grid > * {
+  display: block;
+  break-inside: avoid;
+  margin-bottom: var(--sp-8);
 }
 
 @media (max-width: 900px) {
   .performances__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: var(--sp-6);
+    column-count: 2;
+    column-gap: var(--sp-6);
+  }
+
+  .performances__grid > * {
+    margin-bottom: var(--sp-6);
   }
 }

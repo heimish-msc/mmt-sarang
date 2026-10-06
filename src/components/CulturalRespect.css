@@ -42,3 +42,10 @@
   line-height: 1.4;
   color: var(--text-muted);
 }
+
+@media (max-width: 480px) {
+  .cultural-respect__title,
+  .cultural-respect__body {
+    font-size: min(var(--body-lg), calc((100vw - 56px) / 22));
+  }
+}

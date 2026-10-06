@@ -197,7 +197,7 @@ export const content = {
       image: "/images/program/embodied-listening-ko.webp",
       alt: "디저리두 기반 체화된 경청 프로그램 소개 다이어그램",
       applyLabel: "신청하기",
-      applyHref: "#",
+      applyHref: "https://forms.gle/HDfNeipKM8vxSapD9",
     },
 
     testimonials: {
@@ -316,10 +316,29 @@ export const content = {
     eyebrow: "Research & Publications",
     heading: "연구/출판",
     items: [
-      { title: "컨퍼런스 발표", description: "설명 내용", images: ["/images/research/01.jpg"] },
-      { title: "저작권", description: "설명 내용", images: ["/images/research/02.jpg"] },
-      { title: "졸업생 교육", description: "설명 내용", images: ["/images/research/03.jpg", "/images/research/04.jpg"], captionBelow: true },
-      { title: "Thaut 신경음악치료(NMT) 이수 및 자격증", description: "설명 내용", images: ["/images/research/05.jpg", "/images/research/06.jpg"], captionBelow: true },
+      {
+        title: "컨퍼런스 발표",
+        description: "국제 음악치료 컨퍼런스(OCMT)에서 디저리두를 활용한 병원 임상 치료 사례를 발표했습니다. 이번 사례는 정신건강의학과에서 알코올 사용 장애로 입원한 환자를 대상으로 한 치료 경험입니다.",
+        link: { label: "OCMT 2024 일정 보기", href: "https://onlineconferenceformusictherapy.com/ocmt-schedule-2024/" },
+        images: ["/images/research/01.jpg"],
+      },
+      {
+        title: "저작권",
+        description: "「10주간의 치료적 디저리두 프로그램의 효과」 연구 커리큘럼이 인도 정부로부터 저작권 등록 승인을 받았습니다.",
+        images: ["/images/research/02.jpg"],
+      },
+      {
+        title: "졸업생 교육",
+        description: "동 대학원 음악치료 석사과정 학생들을 대상으로 디저리두의 특성과 활용 방법을 교육하고, 환자 돌봄 및 음악치료 현장에서 치료사로서 직접 연주할 수 있도록 실습 중심의 교육을 진행했습니다.",
+        images: ["/images/research/03.jpg", "/images/research/04.jpg"],
+        captionBelow: true,
+      },
+      {
+        title: "Thaut 신경음악치료(NMT) 이수 및 자격증",
+        description: "JIPMER 의과대학에서 Michael H. Thaut 박사에게 신경음악치료(NMT) 입문교육을 이수하고 수료증을 취득했습니다.",
+        images: ["/images/research/05.jpg", "/images/research/06.jpg"],
+        captionBelow: true,
+      },
     ],
     writing: {
       title: "Medium",
@@ -331,19 +350,53 @@ export const content = {
     eyebrow: "Workshops",
     heading: "워크숍",
     items: [
-      { title: "기타난다", description: "설명 내용", images: [null, null, null] },
-      { title: "스와람 워크숍", description: "설명 내용", images: [null, null, null] },
-      { title: "트랜스젠더협회 워크숍", description: "설명 내용", images: [null] },
-      { title: "자연주의출산센터 워크숍", description: "설명 내용", images: [null] },
-      { title: "신문 기사", description: "설명 내용", images: [null] },
-      { title: "워크숍 안주", description: "설명 내용", images: [null] },
+      {
+        title: "기타난다 나다요가",
+        description: "인도 폰디체리 아난다 아쉬람의 ICYER에서 상기타 라우라 비아지 박사가 진행한 Gitananda Nada Yoga 프로그램의 일환으로, 디저리두의 치료적 효과를 주제로 한 세션을 진행했습니다.",
+        images: ["/images/workshops/gitananda-01.jpg", "/images/workshops/gitananda-02.jpg", "/images/workshops/gitananda-03.jpg"],
+        captionBelow: true,
+      },
+      {
+        title: "스와람 (SVARAM) 워크숍",
+        description: "2023년, 인도 오로빌의 사운드 연구·교육기관 SVARAM에서 ISSP(Integral Sound Studies and Practices) 과정을 이수했습니다. 사운드 명상과 웰니스 분야에서의 활용부터 병원 환자를 위한 치료적 접근에 이르기까지, 디저리두의 다양한 치료적 활용 가능성을 발표하고 많은 사람들에게 디저리두가 지닌 치유적 가능성을 소개했습니다.",
+        images: ["/images/workshops/svaram-01.jpg", "/images/workshops/svaram-02.jpg"],
+        captionBelow: true,
+      },
+      {
+        title: "트랜스젠더협회 워크숍",
+        description: "인도 폰디체리의 트랜스젠더 커뮤니티를 대상으로 디저리두를 활용한 자기 돌봄 워크숍을 진행했습니다.",
+        images: ["/images/workshops/transgender-01.jpg"],
+      },
+      {
+        title: "자연주의출산센터 워크숍",
+        description: "인도 오로빌의 자연주의 출산센터 모닝스타(Morning Star)에서 임산부와 배우자들을 대상으로 디저리두와 호흡을 활용한 출산 전 웰니스 케어를 진행했습니다.",
+        images: ["/images/workshops/birth-center-01.jpg"],
+      },
+      {
+        title: "신문 기사",
+        description: "프랑스 알리앙스 퐁디셰리(Alliance Française de Pondichéry)와 협력하여 우리 대학 음악치료팀의 일원으로 음악과 요가를 활용한 건강증진 활동에 참여했으며, 해당 활동은 2023년 6월 21일자 《The Hindu – Tamil Nadu》에 소개되었습니다.",
+        images: ["/images/workshops/press-01.jpg"],
+      },
+      { title: "워크숍 안주", description: "설명 내용", images: ["/images/workshops/notice-01.jpg"] },
     ],
   },
   performances: {
     eyebrow: "Performances",
     heading: "공연",
     intro: "소개글 내용",
-    images: [null, null, null, null, null, null],
+    images: [
+      "/images/performances/perf-01.jpg",
+      "/images/performances/perf-02.jpg",
+      "/images/performances/perf-03.jpg",
+      "/images/performances/perf-04.jpg",
+      "/images/performances/perf-05.jpg",
+      "/images/performances/perf-06.jpg",
+      "/images/performances/perf-07.jpg",
+      "/images/performances/perf-08.jpg",
+      "/images/performances/perf-09.jpg",
+      "/images/performances/perf-10.jpg",
+      "/images/performances/perf-11.jpg",
+    ],
   },
   culturalRespect: {
     titleEn: "With Respect and Gratitude",

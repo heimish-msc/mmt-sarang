@@ -24,7 +24,7 @@ function EqualHeightImages({ images, alt }) {
   );
 }
 
-export default function MediaItem({ title, description, images, captionBelow = false }) {
+export default function MediaItem({ title, description, link, images, captionBelow = false }) {
   return (
     <article
       className={captionBelow ? "media-item media-item--caption-below" : "media-item"}
@@ -42,6 +42,16 @@ export default function MediaItem({ title, description, images, captionBelow = f
       <div className="media-item__text">
         <h3 className="media-item__title">{title}</h3>
         <p className="media-item__description">{description}</p>
+        {link ? (
+          <a
+            className="media-link__anchor"
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link.label} &#8599;
+          </a>
+        ) : null}
       </div>
     </article>
   );

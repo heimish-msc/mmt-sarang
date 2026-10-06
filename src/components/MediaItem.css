@@ -68,3 +68,9 @@
     gap: var(--sp-8);
   }
 }
+
+@media (max-width: 480px) {
+  .media-item__title {
+    font-size: min(var(--title-md), calc((100vw - 56px) / 18));
+  }
+}
