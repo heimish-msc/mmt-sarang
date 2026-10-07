@@ -12,7 +12,7 @@
 .recommendation__letter--with-photo {
   max-width: none;
   display: grid;
-  grid-template-columns: 380px 1fr;
+  grid-template-columns: minmax(380px, 1fr) minmax(0, var(--measure));
   gap: var(--sp-10);
   align-items: stretch;
 }
@@ -82,7 +82,7 @@
   letter-spacing: -0.01em !important;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
   .recommendation__letter--with-photo {
     grid-template-columns: 1fr;
     align-items: start;
