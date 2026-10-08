@@ -459,3 +459,28 @@
     padding: 10px 14px;
   }
 }
+
+.adm-actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.adm-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--a-card);
+  border: 1px solid var(--a-line);
+}
+
+.adm-table th,
+.adm-table td {
+  padding: 9px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--a-line);
+}
+
+.adm-table th {
+  font-size: 12px;
+  color: var(--a-muted);
+}

@@ -10,6 +10,21 @@ export const content = {
     performances: "Performances",
   },
   hero: {
+    courseButton: { label: "Apply for a Didgeridoo Course", href: "#/program" },
+    subscribeButton: {
+      label: "Subscribe by email",
+      title: "Subscribe by email",
+      description: "Receive news and program updates from Sarang Jin by email.",
+      placeholder: "Email address",
+      submit: "Subscribe",
+      sending: "Sending…",
+      success: "You're subscribed. Thank you!",
+      already: "This email is already subscribed. Thank you!",
+      invalid: "Please enter a valid email address.",
+      error: "Something went wrong. Please try again in a moment.",
+      privacy: "Your email will only be used to send updates.",
+      close: "Close",
+    },
     photo: "/images/videos/instrument.jpg",
     meta: [
       { label: "Jin Sarang — Music Therapist" },

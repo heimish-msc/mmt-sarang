@@ -10,6 +10,21 @@ export const content = {
     performances: "공연",
   },
   hero: {
+    courseButton: { label: "디저리두 코스 신청하기", href: "#/program" },
+    subscribeButton: {
+      label: "구독 이메일 신청",
+      title: "구독 이메일 신청",
+      description: "진사랑의 새로운 소식과 프로그램 안내를 이메일로 받아보세요.",
+      placeholder: "이메일 주소",
+      submit: "신청하기",
+      sending: "신청 중…",
+      success: "구독 신청이 완료되었어요. 감사합니다!",
+      already: "이미 신청된 이메일이에요. 감사합니다!",
+      invalid: "올바른 이메일 주소를 입력해 주세요.",
+      error: "신청하지 못했어요. 잠시 후 다시 시도해 주세요.",
+      privacy: "입력하신 이메일은 소식 안내 목적으로만 사용돼요.",
+      close: "닫기",
+    },
     photo: "/images/videos/instrument.jpg",
     meta: [
       { label: "진사랑 — 메디컬 음악치료사 & 디저리두 연주자" },

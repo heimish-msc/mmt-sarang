@@ -1,6 +1,6 @@
 import { getUrl, readBody, sendJson } from "./_lib/http.js";
 import { checkPassword, clearCookie, isAuthed, isConfigured, sessionCookie } from "./_lib/auth.js";
-import { loadContent, saveContent, saveImage, storageKind } from "./_lib/store.js";
+import { listSubscribers, loadContent, saveContent, saveImage, storageKind } from "./_lib/store.js";
 
 const MAX_JSON = 1_000_000;
 const MAX_IMAGE = 4_000_000;
@@ -44,6 +44,10 @@ export default async function handler(req, res) {
 
     if (action === "content" && req.method === "GET") {
       return sendJson(res, 200, (await loadContent()) ?? {}, NO_STORE);
+    }
+
+    if (action === "subscribers" && req.method === "GET") {
+      return sendJson(res, 200, { subscribers: await listSubscribers() }, NO_STORE);
     }
 
     if (action === "save" && req.method === "PUT") {

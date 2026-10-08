@@ -84,6 +84,71 @@ function Login({ session, onDone }) {
   );
 }
 
+function Subscribers() {
+  const [rows, setRows] = useState(null);
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    api("subscribers").then(({ ok, data }) => setRows(ok ? data.subscribers : []));
+  }, []);
+
+  if (!rows) return <p className="adm-lead">불러오는 중…</p>;
+
+  const fmt = (iso) => (iso ? new Date(iso).toLocaleString("ko-KR") : "");
+  const csv = () => {
+    const lines = ["email,language,subscribed_at", ...rows.map((r) => `${r.email},${r.lang},${r.createdAt}`)];
+    const blob = new Blob(["\ufeff" + lines.join("\n")], { type: "text/csv;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `subscribers-${new Date().toISOString().slice(0, 10)}.csv`;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  };
+  const copy = async () => {
+    await navigator.clipboard.writeText(rows.map((r) => r.email).join(", "));
+    setCopied(true);
+    setTimeout(() => setCopied(false), 1500);
+  };
+
+  return (
+    <>
+      <p className="adm-lead">
+        사이트의 <b>구독 이메일 신청</b> 팝업으로 들어온 이메일이에요. 총 <b>{rows.length}명</b>
+      </p>
+      <div className="adm-actions">
+        <button type="button" className="adm-btn" onClick={csv} disabled={!rows.length}>
+          CSV 내려받기
+        </button>
+        <button type="button" className="adm-btn" onClick={copy} disabled={!rows.length}>
+          {copied ? "복사됐어요" : "이메일 모두 복사"}
+        </button>
+      </div>
+      {rows.length ? (
+        <table className="adm-table">
+          <thead>
+            <tr>
+              <th>이메일</th>
+              <th>언어</th>
+              <th>신청 시각</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r) => (
+              <tr key={r.email}>
+                <td>{r.email}</td>
+                <td>{r.lang === "en" ? "English" : "한국어"}</td>
+                <td>{fmt(r.createdAt)}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      ) : (
+        <p className="adm-hint">아직 신청한 사람이 없어요.</p>
+      )}
+    </>
+  );
+}
+
 function Editor({ session, onLogout }) {
   const [draft, setDraft] = useState(null);
   const [savedJson, setSavedJson] = useState("");
@@ -268,10 +333,14 @@ function Editor({ session, onLogout }) {
 
         <main className="adm-main">
           <h2>{SECTIONS.find((s) => s.key === section)?.label}</h2>
-          <p className="adm-lead">
-            {lang === "ko" ? "한국어" : "영어"} 페이지에 보이는 내용을 수정해요. 모두 고친 뒤 위의 <b>저장하기</b>를 눌러야 사이트에 반영돼요.
-          </p>
-          {Array.isArray(value) ? (
+          {section === "subscribers" ? (
+            <Subscribers />
+          ) : (
+            <p className="adm-lead">
+              {lang === "ko" ? "한국어" : "영어"} 페이지에 보이는 내용을 수정해요. 모두 고친 뒤 위의 <b>저장하기</b>를 눌러야 사이트에 반영돼요.
+            </p>
+          )}
+          {section === "subscribers" ? null : Array.isArray(value) ? (
             <Node value={value} path={[section]} ctx={ctx} />
           ) : isObj(value) ? (
             Object.keys(value).map((k) => <Node key={`${lang}-${section}-${k}`} value={value[k]} path={[section, k]} ctx={ctx} />)

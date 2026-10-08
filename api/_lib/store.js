@@ -1,10 +1,18 @@
 import { mkdir, readdir, readFile, writeFile, unlink } from "node:fs/promises";
 import path from "node:path";
+import { createHmac } from "node:crypto";
 
 const useBlob = Boolean(process.env.BLOB_READ_WRITE_TOKEN);
 const KEEP_VERSIONS = 30;
 const DATA_DIR = path.join(process.cwd(), ".data", "content");
 const UPLOAD_DIR = path.join(process.cwd(), "public", "uploads");
+const SUB_DIR = path.join(process.cwd(), ".data", "subscribers");
+
+const subscriberKey = (email) =>
+  createHmac("sha256", process.env.ADMIN_SECRET || process.env.ADMIN_PASSWORD || "admin")
+    .update(email)
+    .digest("hex")
+    .slice(0, 32);
 
 export const storageKind = () => (useBlob ? "blob" : "local");
 
@@ -71,4 +79,57 @@ export async function saveImage(buffer, filename, contentType) {
   await mkdir(UPLOAD_DIR, { recursive: true });
   await writeFile(path.join(UPLOAD_DIR, name), buffer);
   return `/uploads/${name}`;
+}
+
+export async function addSubscriber(email, lang) {
+  const key = subscriberKey(email);
+  const record = JSON.stringify({ email, lang, createdAt: new Date().toISOString() });
+  if (useBlob) {
+    const { put, list } = await blob();
+    const { blobs } = await list({ prefix: `subscribers/${key}`, limit: 1 });
+    if (blobs.length) return "exists";
+    await put(`subscribers/${key}.json`, record, {
+      access: "public",
+      addRandomSuffix: false,
+      contentType: "application/json",
+    });
+    return "created";
+  }
+  await mkdir(SUB_DIR, { recursive: true });
+  const file = path.join(SUB_DIR, `${key}.json`);
+  try {
+    await readFile(file);
+    return "exists";
+  } catch {
+    await writeFile(file, record);
+    return "created";
+  }
+}
+
+export async function listSubscribers() {
+  let records = [];
+  if (useBlob) {
+    const { list } = await blob();
+    const { blobs } = await list({ prefix: "subscribers/", limit: 1000 });
+    const results = [];
+    for (let i = 0; i < blobs.length; i += 20) {
+      const batch = await Promise.all(
+        blobs.slice(i, i + 20).map((b) =>
+          fetch(b.url)
+            .then((r) => (r.ok ? r.json() : null))
+            .catch(() => null)
+        )
+      );
+      results.push(...batch);
+    }
+    records = results.filter(Boolean);
+  } else {
+    try {
+      const files = (await readdir(SUB_DIR)).filter((f) => f.endsWith(".json"));
+      records = await Promise.all(files.map(async (f) => JSON.parse(await readFile(path.join(SUB_DIR, f), "utf8"))));
+    } catch {
+      records = [];
+    }
+  }
+  return records.sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
 }
