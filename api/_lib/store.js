@@ -2,7 +2,7 @@ import { mkdir, readdir, readFile, writeFile, unlink } from "node:fs/promises";
 import path from "node:path";
 import { createHmac } from "node:crypto";
 
-const useBlob = Boolean(process.env.BLOB_READ_WRITE_TOKEN);
+const useBlob = Boolean(process.env.BLOB_READ_WRITE_TOKEN || process.env.BLOB_STORE_ID);
 const KEEP_VERSIONS = 30;
 const DATA_DIR = path.join(process.cwd(), ".data", "content");
 const UPLOAD_DIR = path.join(process.cwd(), "public", "uploads");

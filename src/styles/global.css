@@ -18,6 +18,17 @@ p {
   margin: 0;
 }
 
+.container p,
+.program-table__experience {
+  text-align: justify;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.cultural-respect p {
+  text-align: center;
+}
+
 img {
   display: block;
   max-width: 100%;

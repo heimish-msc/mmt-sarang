@@ -20,5 +20,4 @@
   line-height: var(--lh-body);
   color: var(--text-body);
   max-width: var(--measure);
-  text-align: center;
 }
