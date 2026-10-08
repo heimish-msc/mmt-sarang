@@ -21,9 +21,9 @@
   align-items: center;
   justify-content: center;
   padding: var(--sp-7) var(--sp-11);
-  background: var(--ink-1000);
+  background: var(--surface-page);
   border: 1px solid var(--ink-1000) !important;
-  color: var(--paper-50);
+  color: var(--ink-1000);
   font-family: var(--font-ko);
   font-size: var(--title-sm);
   font-weight: 700;
@@ -32,8 +32,8 @@
 }
 
 .hero__course-button:hover {
-  background: transparent;
-  color: var(--ink-1000);
+  background: var(--ink-1000);
+  color: var(--paper-50);
 }
 
 .hero__subscribe-button {
