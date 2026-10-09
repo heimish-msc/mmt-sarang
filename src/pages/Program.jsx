@@ -16,17 +16,19 @@ export default function Program() {
       <div className="container">
         <PageHeader eyebrow={program.eyebrow} heading={program.heading} />
 
-        <ProgramApproach approach={program.approach} />
+        <div className="program-page__lead" id="embodied-listening">
+          <ProgramHighlight highlight={program.highlight} />
+        </div>
+
+        <div className="program-page__block">
+          <ProgramApproach approach={program.approach} />
+        </div>
 
         <div className="program-page__block">
           <ProgramTable
             rows={program.programs}
             labels={{ program: "Program", format: "Format", experience: "Experience" }}
           />
-        </div>
-
-        <div className="program-page__block" id="embodied-listening">
-          <ProgramHighlight highlight={program.highlight} />
         </div>
 
         <div className="program-page__block">

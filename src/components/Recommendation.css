@@ -24,6 +24,40 @@
   align-items: stretch;
 }
 
+.recommendation__letter--pair {
+  max-width: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--sp-11);
+  align-items: stretch;
+}
+
+.recommendation__letter--pair .recommendation__text {
+  display: flex;
+  flex-direction: column;
+  max-width: none;
+}
+
+.recommendation__letter--pair .recommendation__block--ko {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.recommendation__letter--pair .recommendation__signature {
+  margin-top: auto;
+}
+
+.recommendation__letter--pair .recommendation__paragraph:last-of-type {
+  margin-bottom: var(--sp-7);
+}
+
+.recommendation__letter--pair .recommendation__block--ko {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
 .recommendation__photo {
   height: 100%;
 }
@@ -90,6 +124,16 @@
 }
 
 @media (max-width: 1024px) {
+  .recommendation__letter--pair {
+    grid-template-columns: 1fr;
+    row-gap: var(--sp-9);
+  }
+
+  .recommendation__letter--pair .recommendation__block--ko {
+    padding-top: var(--sp-8);
+    border-top: var(--hair) solid var(--line-soft);
+  }
+
   .recommendation__letter--with-photo {
     grid-template-columns: 1fr;
     align-items: start;

@@ -20,13 +20,35 @@ export default function Recommendation() {
         ) : null}
 
         <div className="recommendation__letters">
-          {recommendation.letters.map((letter, i) => (
+          {recommendation.letters.map((letter, i) => {
+            const hasKo = lang === "ko" && Boolean(letter.paragraphsKo);
+            const pair = hasKo && !letter.photo;
+            const koBlock = hasKo ? (
+              <div className="recommendation__block--ko">
+                {letter.noteKo ? <p className="recommendation__note--ko">{letter.noteKo}</p> : null}
+                {letter.headingKo ? (
+                  <h4 className="recommendation__heading--ko">{letter.headingKo}</h4>
+                ) : null}
+                {letter.paragraphsKo.map((p, j) => (
+                  <p className="recommendation__paragraph recommendation__paragraph--ko" key={j}>
+                    {p}
+                  </p>
+                ))}
+                <div className="recommendation__signature">
+                  <Caption>{letter.nameKo}</Caption>
+                  <Caption style={{ opacity: 0.65, marginTop: 4 }}>{letter.titleKo}</Caption>
+                  <Caption style={{ opacity: 0.65, marginTop: 2 }}>{letter.affiliationKo}</Caption>
+                </div>
+              </div>
+            ) : null;
+
+            return (
             <div
-              className={
-                letter.photo
-                  ? "recommendation__letter recommendation__letter--with-photo"
-                  : "recommendation__letter"
-              }
+              className={[
+                "recommendation__letter",
+                letter.photo ? "recommendation__letter--with-photo" : "",
+                pair ? "recommendation__letter--pair" : "",
+              ].join(" ")}
               key={i}
             >
               {letter.photo ? (
@@ -51,31 +73,12 @@ export default function Recommendation() {
                   </Caption>
                 </div>
 
-                {lang === "ko" && letter.paragraphsKo ? (
-                  <div className="recommendation__block--ko">
-                    {letter.noteKo ? (
-                      <p className="recommendation__note--ko">{letter.noteKo}</p>
-                    ) : null}
-                    {letter.headingKo ? (
-                      <h4 className="recommendation__heading--ko">{letter.headingKo}</h4>
-                    ) : null}
-                    {letter.paragraphsKo.map((p, j) => (
-                      <p className="recommendation__paragraph recommendation__paragraph--ko" key={j}>
-                        {p}
-                      </p>
-                    ))}
-                    <div className="recommendation__signature">
-                      <Caption>{letter.nameKo}</Caption>
-                      <Caption style={{ opacity: 0.65, marginTop: 4 }}>{letter.titleKo}</Caption>
-                      <Caption style={{ opacity: 0.65, marginTop: 2 }}>
-                        {letter.affiliationKo}
-                      </Caption>
-                    </div>
-                  </div>
-                ) : null}
+                {!pair ? koBlock : null}
               </div>
+              {pair ? <div className="recommendation__text">{koBlock}</div> : null}
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

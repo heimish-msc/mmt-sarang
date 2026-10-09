@@ -64,7 +64,6 @@ export const content = {
           "Sarang's work transcends cultural and geographical boundaries, reminding us that authentic healing arises from empathy, respect, and genuine human connection. I have every confidence that her continued contributions will enrich the evolving field of music therapy and integrative healthcare. I wish her every success in all her future endeavors. She truly deserves every opportunity that comes her way, and I look forward to seeing her work touch many more lives.",
         ],
         photo: "/images/recommendation/01.jpg",
-        noteKo: "제가 인도에서 연구와 임상 활동을 수행하는 동안 지도와 격려를 보내 주신 학과장님께서 작성해 주신 글입니다.",
         paragraphsKo: [
           "스리 발라지 비디야피트 대학교의 살루토제네시스 및 보완의학 연구소(ISCM)와 MGMCRI 병원에서 헌신적인 활동을 통해, 음악가이자 연구자이며 따뜻한 치료자로 성장해 온 진사랑의 여정을 지켜볼 수 있었던 것은 저에게 큰 영광이었습니다. 그녀는 사람 중심의 돌봄이 지닌 진정한 가치를 실천하며, 과학적 탐구와 예술적 역량, 그리고 깊은 인간적 감수성을 하나로 연결하고 있습니다. 이러한 그녀의 접근은 많은 이들에게 영감을 주고 있습니다.",
           "특히 디저리두를 트라우마 치유를 위한 치료적 매개로 활용한 그의 선구적인 작업에 깊은 인상을 받았습니다. 한국의 한 음악가가 고대 호주 원주민의 악기인 디저리두를 활용하여, 인도 남부의 의료 현장에서 돌봄을 필요로 하는 지역 주민들에게 회복과 희망의 경험을 전하고 있다는 사실은 연민과 음악, 그리고 치유 예술이 지닌 보편적인 가능성을 보여주는 살아 있는 증거라 할 수 있습니다.",
@@ -82,7 +81,6 @@ export const content = {
         paragraphs: [
           "Sarang has been one of my most cherished students — not only for her exceptional skill as a didgeridoo player, but for the remarkable resilience and endurance she has brought to her journey in music therapy. Crossing cultural borders to bring the didgeridoo into clinical and community settings within the Indian subcontinent was no small undertaking, yet she embraced it with openness, discipline, and heart. Watching her navigate unfamiliar terrain — both musically and culturally — and emerge as a confident, capable practitioner has been genuinely rewarding. Sarang has truly come into her own as a shining star in this field, and I have no doubt her work will continue to open new possibilities for how the didgeridoo is understood and used in therapeutic practice.",
         ],
-        headingKo: "추천의 글",
         paragraphsKo: [
           "사랑은 제가 가장 아끼는 제자 중 한 명입니다. 뛰어난 디저리두 연주 실력뿐만 아니라, 음악치료를 향한 여정에서 보여준 놀라운 회복탄력성과 끈기 때문에 더욱 특별한 제자입니다.",
           "인도 지역의 임상 및 지역사회 현장에 디저리두를 소개하기 위해 문화적 경계를 넘어선다는 것은 결코 쉬운 일이 아니었습니다. 그러나 사랑은 열린 마음과 성실함, 그리고 진정성을 가지고 그 여정에 임했습니다. 음악적으로나 문화적으로 익숙하지 않은 환경 속에서 새로운 영역을 개척해 나가고, 그 과정을 거쳐 자신감 있고 역량 있는 실천가로 성장해 가는 모습을 지켜보는 것은 저에게도 진심으로 뜻깊은 일이었습니다.",
@@ -387,7 +385,7 @@ export const content = {
       {
         title: "자연주의출산센터 워크숍",
         description: "인도 오로빌의 자연주의 출산센터 모닝스타(Morning Star)에서 임산부와 배우자들을 대상으로 디저리두와 호흡을 활용한 출산 전 웰니스 케어를 진행했습니다.",
-        images: ["/images/workshops/birth-center-01.jpg", "/images/workshops/birth-center-02.jpg"],
+        images: ["/images/workshops/birth-center-02.jpg"],
       },
       {
         title: "신문 기사",

@@ -1,5 +1,5 @@
 .program-highlight__image {
-  width: 100%;
+  width: clamp(min(100%, 640px), calc((100svh - 430px) * 1.5), 100%);
   height: auto;
   display: block;
   border: var(--hair) solid var(--line-hair);

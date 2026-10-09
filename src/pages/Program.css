@@ -4,6 +4,10 @@
   border-top: var(--hair) solid var(--line-hair);
 }
 
+.program-page__lead {
+  margin-top: var(--sp-10);
+}
+
 .program-approach {
-  margin-top: var(--sp-11);
+  margin-top: 0;
 }
