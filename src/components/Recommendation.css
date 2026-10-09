@@ -1,3 +1,10 @@
+.recommendation__intro {
+  margin-top: var(--sp-7);
+  font-size: var(--body-md);
+  line-height: var(--lh-body);
+  color: var(--text-muted);
+}
+
 .recommendation__letters {
   margin-top: var(--sp-11);
   display: flex;

@@ -36,26 +36,6 @@
   color: var(--paper-50);
 }
 
-.hero__subscribe-button {
-  appearance: none;
-  background: transparent;
-  cursor: pointer;
-  display: inline-block;
-  margin-top: var(--sp-9);
-  padding: var(--sp-5) var(--sp-8);
-  border: 1px solid var(--ink-1000) !important;
-  font-family: var(--font-ko);
-  font-size: var(--body-md);
-  font-weight: 600;
-  color: var(--text-display);
-  transition: background var(--dur-med) var(--ease-standard), color var(--dur-med) var(--ease-standard);
-}
-
-.hero__subscribe-button:hover {
-  background: var(--ink-1000);
-  color: var(--paper-50);
-}
-
 @media (max-width: 640px) {
   .hero__course-button {
     width: 100%;

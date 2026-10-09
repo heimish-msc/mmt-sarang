@@ -12,7 +12,6 @@ export const content = {
   hero: {
     courseButton: { label: "Apply for a Didgeridoo Course", href: "#/program" },
     subscribeButton: {
-      label: "Subscribe by email",
       title: "Subscribe by email",
       description: "Receive news and program updates from Sarang Jin by email.",
       placeholder: "Email address",
@@ -23,7 +22,6 @@ export const content = {
       invalid: "Please enter a valid email address.",
       error: "Something went wrong. Please try again in a moment.",
       privacy: "Your email will only be used to send updates.",
-      close: "Close",
     },
     photo: "/images/videos/instrument.jpg",
     meta: [
@@ -57,6 +55,7 @@ export const content = {
   recommendation: {
     eyebrow: "",
     heading: "Recommendation",
+    intro: "These letters were written by my department head and my academic advisor, who guided and encouraged me while I conducted my research and clinical work in India.",
     letters: [
       {
         paragraphs: [
@@ -338,7 +337,7 @@ export const content = {
       {
         title: "Conference Presentation",
         description: "At the International Music Therapy Conference, I presented a case on how the didgeridoo was used in clinical treatment within a hospital setting. This particular case involved a patient who was hospitalized in a psychiatric unit for alcohol use disorder (AUD).",
-        link: { label: "View OCMT 2024 schedule", href: "https://onlineconferenceformusictherapy.com/ocmt-schedule-2024/" },
+        link: { label: "Role of Didgeridoo as Part of Music Therapy Intervention to Enhance a Sense of Achievement and Self-Control – Online Conference for Music Therapy", href: "https://onlineconferenceformusictherapy.com/sessions/role-of-didgeridoo-as-part-of-music-therapy-intervention-to-enhance-a-sense-of-achievement-and-self-control/" },
         images: ["/images/research/01.jpg"],
       },
       {
@@ -377,9 +376,8 @@ export const content = {
       },
       {
         title: "SVARAM Workshop",
-        description: "In 2023, I completed the ISSP (Integral Sound Studies and Practices) programme at SVARAM, a sound research and educational institution in Auroville, India. I presented on the diverse therapeutic applications of the didgeridoo, ranging from sound meditation and wellness practices to therapeutic approaches for hospital patients, introducing its healing potential to a wider audience.",
-        images: ["/images/workshops/svaram-01.jpg", "/images/workshops/svaram-02.jpg"],
-        captionBelow: true,
+        description: "In 2023, I completed the ISSP (Integral Sound Studies and Practices) programme at SVARAM, a sound research and educational institution in Auroville, India. I presented on the diverse therapeutic applications of the didgeridoo, ranging from sound meditation and wellness practices to therapeutic approaches for hospital patients, introducing its healing potential to a wider audience.\n\nI had the opportunity to introduce and perform the didgeridoo during a gathering with Aurelio, founder of SVARAM, and the director and researchers of Synchronicity Center in Korea.",
+        images: ["/images/workshops/svaram-01.jpg", "/images/workshops/svaram-03.jpg", "/images/workshops/svaram-04.jpg"],
       },
       {
         title: "Transgender Association Workshop",
@@ -389,14 +387,14 @@ export const content = {
       {
         title: "Natural Birth Center Workshop",
         description: "Facilitated a prenatal wellness programme at Morning Star, a natural birthing centre in Auroville, India, for expectant mothers and their partners, incorporating the didgeridoo and breathwork.",
-        images: ["/images/workshops/birth-center-01.jpg"],
+        images: ["/images/workshops/birth-center-01.jpg", "/images/workshops/birth-center-02.jpg"],
       },
       {
         title: "Press Coverage",
         description: "In collaboration with Alliance Française de Pondichéry, I participated as a member of our university’s Music Therapy team in a health-promotion program integrating music and yoga. The program was featured in The Hindu – Tamil Nadu on June 21, 2023.",
         images: ["/images/workshops/press-01.jpg"],
       },
-      { title: "Workshop Anju", description: "Description", images: ["/images/workshops/notice-01.jpg"] },
+      { title: "The Therapeutic Potential of the Didgeridoo: A Webinar for Music Therapists in India", description: "Description", images: ["/images/workshops/notice-01.jpg"] },
     ],
   },
   performances: {
@@ -410,11 +408,30 @@ export const content = {
       "/images/performances/perf-04.jpg",
       "/images/performances/perf-05.jpg",
       "/images/performances/perf-06.jpg",
-      "/images/performances/perf-07.jpg",
       "/images/performances/perf-08.jpg",
       "/images/performances/perf-09.jpg",
-      "/images/performances/perf-10.jpg",
-      "/images/performances/perf-11.jpg",
+      "/images/performances/perf-10-crop.jpg",
+      "/images/performances/perf-12.jpg",
+      "/images/performances/perf-13.jpg",
+      "/images/performances/perf-14.jpg",
+      "/images/performances/perf-15.jpg",
+      "/images/performances/perf-16.jpg",
+      "/images/performances/perf-17.jpg",
+      "/images/performances/perf-18.jpg",
+      "/images/performances/perf-19.jpg",
+      "/images/performances/perf-20.jpg",
+      "/images/performances/perf-21.jpg",
+      "/images/performances/perf-22.jpg",
+      "/images/performances/perf-23.jpg",
+      "/images/performances/perf-24.jpg",
+      "/images/performances/perf-25.jpg",
+      "/images/performances/perf-26.jpg",
+      "/images/performances/perf-27.jpg",
+      "/images/performances/perf-28.jpg",
+      "/images/performances/perf-29.jpg",
+      "/images/performances/perf-30.jpg",
+      "/images/performances/perf-31.jpg",
+      "/images/performances/perf-32.jpg",
     ],
   },
   culturalRespect: {

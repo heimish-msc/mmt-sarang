@@ -12,7 +12,6 @@ export const content = {
   hero: {
     courseButton: { label: "디저리두 코스 신청하기", href: "#/program" },
     subscribeButton: {
-      label: "구독 이메일 신청",
       title: "구독 이메일 신청",
       description: "진사랑의 새로운 소식과 프로그램 안내를 이메일로 받아보세요.",
       placeholder: "이메일 주소",
@@ -22,8 +21,7 @@ export const content = {
       already: "이미 신청된 이메일이에요. 감사합니다!",
       invalid: "올바른 이메일 주소를 입력해 주세요.",
       error: "신청하지 못했어요. 잠시 후 다시 시도해 주세요.",
-      privacy: "입력하신 이메일은 소식 안내 목적으로만 사용돼요.",
-      close: "닫기",
+      privacy: "입력하신 이메일은 소식 안내 목적으로만 사용됩니다.",
     },
     photo: "/images/videos/instrument.jpg",
     meta: [
@@ -57,6 +55,7 @@ export const content = {
   recommendation: {
     eyebrow: "Recommendation",
     heading: "추천사",
+    intro: "제가 인도에서 연구와 임상 활동을 수행하는 동안 지도와 격려를 보내 주신 학과장님과 지도교수님께서 작성해 주신 글입니다.",
     letters: [
       {
         paragraphs: [
@@ -338,7 +337,7 @@ export const content = {
       {
         title: "컨퍼런스 발표",
         description: "국제 음악치료 컨퍼런스(OCMT)에서 디저리두를 활용한 병원 임상 치료 사례를 발표했습니다. 이번 사례는 정신건강의학과에서 알코올 사용 장애로 입원한 환자를 대상으로 한 치료 경험입니다.",
-        link: { label: "OCMT 2024 일정 보기", href: "https://onlineconferenceformusictherapy.com/ocmt-schedule-2024/" },
+        link: { label: "Role of Didgeridoo as Part of Music Therapy Intervention to Enhance a Sense of Achievement and Self-Control – Online Conference for Music Therapy", href: "https://onlineconferenceformusictherapy.com/sessions/role-of-didgeridoo-as-part-of-music-therapy-intervention-to-enhance-a-sense-of-achievement-and-self-control/" },
         images: ["/images/research/01.jpg"],
       },
       {
@@ -377,9 +376,8 @@ export const content = {
       },
       {
         title: "스와람 (SVARAM) 워크숍",
-        description: "2023년, 인도 오로빌의 사운드 연구·교육기관 SVARAM에서 ISSP(Integral Sound Studies and Practices) 과정을 이수했습니다. 사운드 명상과 웰니스 분야에서의 활용부터 병원 환자를 위한 치료적 접근에 이르기까지, 디저리두의 다양한 치료적 활용 가능성을 발표하고 많은 사람들에게 디저리두가 지닌 치유적 가능성을 소개했습니다.",
-        images: ["/images/workshops/svaram-01.jpg", "/images/workshops/svaram-02.jpg"],
-        captionBelow: true,
+        description: "2023년, 인도 오로빌의 사운드 연구·교육기관 SVARAM에서 ISSP(Integral Sound Studies and Practices) 과정을 이수했습니다. 사운드 명상과 웰니스 분야에서의 활용부터 병원 환자를 위한 치료적 접근에 이르기까지, 디저리두의 다양한 치료적 활용 가능성을 발표하고 많은 사람들에게 디저리두가 지닌 치유적 가능성을 소개했습니다.\n\n스와람(SVARAM)의 설립자 오렐리오(Aurelio)와 한국 음악명상심리치유연구소 소장님 및 연구자들이 함께한 자리에서 디저리두를 소개하고 직접 연주하는 시간을 가졌습니다.",
+        images: ["/images/workshops/svaram-01.jpg", "/images/workshops/svaram-03.jpg", "/images/workshops/svaram-04.jpg"],
       },
       {
         title: "트랜스젠더협회 워크숍",
@@ -389,14 +387,14 @@ export const content = {
       {
         title: "자연주의출산센터 워크숍",
         description: "인도 오로빌의 자연주의 출산센터 모닝스타(Morning Star)에서 임산부와 배우자들을 대상으로 디저리두와 호흡을 활용한 출산 전 웰니스 케어를 진행했습니다.",
-        images: ["/images/workshops/birth-center-01.jpg"],
+        images: ["/images/workshops/birth-center-01.jpg", "/images/workshops/birth-center-02.jpg"],
       },
       {
         title: "신문 기사",
         description: "프랑스 알리앙스 퐁디셰리(Alliance Française de Pondichéry)와 협력하여 우리 대학 음악치료팀의 일원으로 음악과 요가를 활용한 건강증진 활동에 참여했으며, 해당 활동은 2023년 6월 21일자 《The Hindu – Tamil Nadu》에 소개되었습니다.",
         images: ["/images/workshops/press-01.jpg"],
       },
-      { title: "워크숍 안주", description: "설명 내용", images: ["/images/workshops/notice-01.jpg"] },
+      { title: "인도 음악치료사를 위한 디저리두의 치료적 활용 가능성: 웨비나", description: "설명 내용", images: ["/images/workshops/notice-01.jpg"] },
     ],
   },
   performances: {
@@ -410,11 +408,30 @@ export const content = {
       "/images/performances/perf-04.jpg",
       "/images/performances/perf-05.jpg",
       "/images/performances/perf-06.jpg",
-      "/images/performances/perf-07.jpg",
       "/images/performances/perf-08.jpg",
       "/images/performances/perf-09.jpg",
-      "/images/performances/perf-10.jpg",
-      "/images/performances/perf-11.jpg",
+      "/images/performances/perf-10-crop.jpg",
+      "/images/performances/perf-12.jpg",
+      "/images/performances/perf-13.jpg",
+      "/images/performances/perf-14.jpg",
+      "/images/performances/perf-15.jpg",
+      "/images/performances/perf-16.jpg",
+      "/images/performances/perf-17.jpg",
+      "/images/performances/perf-18.jpg",
+      "/images/performances/perf-19.jpg",
+      "/images/performances/perf-20.jpg",
+      "/images/performances/perf-21.jpg",
+      "/images/performances/perf-22.jpg",
+      "/images/performances/perf-23.jpg",
+      "/images/performances/perf-24.jpg",
+      "/images/performances/perf-25.jpg",
+      "/images/performances/perf-26.jpg",
+      "/images/performances/perf-27.jpg",
+      "/images/performances/perf-28.jpg",
+      "/images/performances/perf-29.jpg",
+      "/images/performances/perf-30.jpg",
+      "/images/performances/perf-31.jpg",
+      "/images/performances/perf-32.jpg",
     ],
   },
   culturalRespect: {

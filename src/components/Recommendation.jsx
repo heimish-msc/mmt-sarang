@@ -15,6 +15,9 @@ export default function Recommendation() {
         <DisplayHeading size="md" style={{ marginTop: recommendation.eyebrow ? 20 : 0 }}>
           {recommendation.heading}
         </DisplayHeading>
+        {recommendation.intro ? (
+          <p className="recommendation__intro">{recommendation.intro}</p>
+        ) : null}
 
         <div className="recommendation__letters">
           {recommendation.letters.map((letter, i) => (

@@ -98,6 +98,7 @@
 }
 
 .workshop__description {
+  white-space: pre-line;
   margin-top: var(--sp-6);
   font-size: var(--body-md);
   line-height: var(--lh-body);

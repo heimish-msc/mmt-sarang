@@ -1,11 +1,10 @@
-import { useState } from "react";
 import { useLanguage } from "../i18n/LanguageContext.jsx";
 import { DisplayHeading } from "../ds/editorial/DisplayHeading.jsx";
 import { Caption } from "../ds/editorial/Caption.jsx";
 import { PullQuote } from "../ds/editorial/PullQuote.jsx";
 import { Figure } from "../ds/editorial/Figure.jsx";
 import { withBold } from "../lib/richText.jsx";
-import SubscribeModal from "./SubscribeModal.jsx";
+import SubscribeForm from "./SubscribeForm.jsx";
 import "./Hero.css";
 
 function ActionLink({ href, className, children }) {
@@ -24,7 +23,6 @@ function ActionLink({ href, className, children }) {
 export default function Hero() {
   const { t, lang } = useLanguage();
   const { hero } = t;
-  const [subscribeOpen, setSubscribeOpen] = useState(false);
 
   return (
     <section id="top" className="hero">
@@ -63,15 +61,7 @@ export default function Hero() {
                   {withBold(p)}
                 </p>
               ))}
-              {hero.subscribeButton?.label ? (
-                <button
-                  type="button"
-                  className="hero__subscribe-button"
-                  onClick={() => setSubscribeOpen(true)}
-                >
-                  {hero.subscribeButton.label} &#8599;
-                </button>
-              ) : null}
+              {hero.subscribeButton?.title ? <SubscribeForm copy={hero.subscribeButton} lang={lang} /> : null}
             </div>
           ) : null}
         </div>
@@ -87,13 +77,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {hero.subscribeButton && subscribeOpen ? (
-        <SubscribeModal
-          onClose={() => setSubscribeOpen(false)}
-          copy={hero.subscribeButton}
-          lang={lang}
-        />
-      ) : null}
     </section>
   );
 }
