@@ -24,7 +24,6 @@
   font-size: var(--body-md);
   line-height: var(--lh-body);
   color: var(--text-body);
-  max-width: var(--measure);
 }
 
 .program-approach__body + .program-approach__body {
