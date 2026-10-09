@@ -49,7 +49,7 @@ export default function MediaItem({ title, description, link, images, captionBel
             target="_blank"
             rel="noopener noreferrer"
           >
-            {link.label} &#8599;
+            {link.label}&nbsp;&#8599;
           </a>
         ) : null}
       </div>

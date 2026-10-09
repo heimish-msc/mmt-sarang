@@ -34,12 +34,13 @@
   font-size: var(--body-md);
   line-height: var(--lh-body);
   color: var(--text-body);
-  max-width: var(--measure);
 }
 
 .media-link__anchor {
   display: inline-block;
   margin-top: var(--sp-7);
+  padding-bottom: var(--sp-4);
+  line-height: 1.5;
   font-family: var(--font-meta);
   font-size: var(--body-md);
   font-weight: 600;
