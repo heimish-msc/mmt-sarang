@@ -64,6 +64,8 @@ export const LABELS = {
   humanisticTitle: "인본주의 소제목",
   humanisticBody: "인본주의 본문",
   highlight: "대표 프로그램 소개",
+  inquiry: "표 아래 문의 버튼 (메일 연결)",
+  subject: "메일 제목",
   placeholder: "입력칸 안내 문구",
   submit: "신청 버튼 문구",
   sending: "신청 중 문구",

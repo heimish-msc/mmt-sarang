@@ -209,6 +209,8 @@ export const content = {
       },
     ],
 
+    inquiry: { label: "문의하기", subject: "프로그램 문의" },
+
     highlight: {
       image: "/images/program/embodied-listening-ko.webp",
       alt: "디저리두 기반 체화된 경청 프로그램 소개 다이어그램",

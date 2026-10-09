@@ -9,7 +9,8 @@ import "./Program.css";
 
 export default function Program() {
   const { t } = useLanguage();
-  const { program } = t;
+  const { program, contact } = t;
+  const inquiry = program.inquiry;
 
   return (
     <section id="top" className="section page">
@@ -29,6 +30,14 @@ export default function Program() {
             rows={program.programs}
             labels={{ program: "Program", format: "Format", experience: "Experience" }}
           />
+          {inquiry?.label ? (
+            <a
+              className="program-page__inquiry"
+              href={`mailto:${contact.email}?subject=${encodeURIComponent(inquiry.subject ?? "")}`}
+            >
+              {inquiry.label}
+            </a>
+          ) : null}
         </div>
 
         <div className="program-page__block">

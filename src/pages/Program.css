@@ -11,3 +11,20 @@
 .program-approach {
   margin-top: 0;
 }
+
+.program-page__inquiry {
+  display: inline-block;
+  margin-top: var(--sp-9);
+  padding: var(--sp-5) var(--sp-9);
+  border: 1px solid var(--ink-1000) !important;
+  font-family: var(--font-ko);
+  font-size: var(--body-md);
+  font-weight: 600;
+  color: var(--text-display);
+  transition: background var(--dur-med) var(--ease-standard), color var(--dur-med) var(--ease-standard);
+}
+
+.program-page__inquiry:hover {
+  background: var(--ink-1000);
+  color: var(--paper-50);
+}

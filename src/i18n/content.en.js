@@ -209,6 +209,8 @@ export const content = {
       },
     ],
 
+    inquiry: { label: "Contact us", subject: "Program inquiry" },
+
     highlight: {
       image: "/images/program/embodied-listening-en.webp",
       alt: "Diagram introducing the Didgeridoo-based Embodied Listening program",
