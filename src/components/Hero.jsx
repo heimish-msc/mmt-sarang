@@ -1,7 +1,6 @@
 import { useLanguage } from "../i18n/LanguageContext.jsx";
 import { DisplayHeading } from "../ds/editorial/DisplayHeading.jsx";
 import { Caption } from "../ds/editorial/Caption.jsx";
-import { PullQuote } from "../ds/editorial/PullQuote.jsx";
 import { Figure } from "../ds/editorial/Figure.jsx";
 import { withBold } from "../lib/richText.jsx";
 import SubscribeForm from "./SubscribeForm.jsx";
@@ -37,12 +36,23 @@ export default function Hero() {
           </div>
         ) : null}
 
-        <Figure
-          src={hero.photo}
-          alt={hero.name}
-          ratio="16/9"
-          className="hero__photo"
-        />
+        <div className="hero__visual">
+          <Figure
+            src={hero.photo}
+            alt={hero.name}
+            ratio="16/9"
+            className="hero__photo"
+          />
+          {hero.philosophy?.length ? (
+            <blockquote className="hero__overlay">
+              {hero.philosophy.map((line, i) => (
+                <span className={`hero__overlay-line hero__overlay-line--${i}`} key={i}>
+                  {line}
+                </span>
+              ))}
+            </blockquote>
+          ) : null}
+        </div>
 
         <div className="hero__intro">
           <div className="hero__identity">
@@ -64,16 +74,6 @@ export default function Hero() {
               {hero.subscribeButton?.title ? <SubscribeForm copy={hero.subscribeButton} lang={lang} /> : null}
             </div>
           ) : null}
-        </div>
-
-        <div className="hero__philosophy">
-          <PullQuote>
-            {hero.philosophy.map((line, i) => (
-              <span className={`hero__philosophy-line hero__philosophy-line--${i}`} key={i}>
-                {line}
-              </span>
-            ))}
-          </PullQuote>
         </div>
       </div>
 

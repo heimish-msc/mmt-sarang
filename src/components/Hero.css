@@ -81,31 +81,53 @@
   }
 }
 
-.hero__philosophy {
-  margin-top: var(--sp-12);
-  max-width: 480px;
+.hero__visual {
+  position: relative;
 }
 
-.hero__philosophy blockquote {
-  border-top: none !important;
-  padding-top: 0 !important;
+.hero__visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top right, rgba(11, 11, 10, 0.6) 0%, rgba(11, 11, 10, 0) 60%);
+  pointer-events: none;
 }
 
-.hero__philosophy blockquote p {
-  font-size: var(--title-md) !important;
-  line-height: 2 !important;
-  color: var(--text-display) !important;
-  text-align: left !important;
+.hero__overlay {
+  position: absolute;
+  left: var(--sp-10);
+  bottom: var(--sp-10);
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  border: none;
+  color: var(--paper-50);
+  font-family: var(--font-display);
+  font-size: clamp(16px, 2.2vw, 30px);
+  line-height: 1.45;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
 }
 
-.hero__philosophy-line {
+.hero__overlay-line {
   display: block;
 }
 
-.hero__philosophy-line--1 {
+.hero__overlay-line--1 {
   font-style: italic;
 }
 
-.hero__philosophy-line + .hero__philosophy-line {
-  margin-top: var(--sp-5);
+.hero__overlay-line + .hero__overlay-line {
+  margin-top: 0.35em;
+}
+
+@media (max-width: 640px) {
+  .hero__photo > div {
+    aspect-ratio: 4 / 3 !important;
+  }
+
+  .hero__overlay {
+    left: var(--sp-7);
+    bottom: var(--sp-7);
+    font-size: 15px;
+  }
 }
